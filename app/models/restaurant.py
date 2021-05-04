@@ -10,6 +10,7 @@ class Restaurant(db.Model):
     description = db.Column(db.String(300), nullable=False)
 
     cuisines = db.relationship("Cuisine", back_populates="restaurants", secondary=restaurant_cuisines)
+    menus = db.relationship("Menu")
 
     def to_dict(self):
         return {
@@ -17,5 +18,15 @@ class Restaurant(db.Model):
             "name": self.name,
             "address": self.address,
             "description": self.description,
-            "cuisines": [{"cuisine_id": cuisine.id, "cuisine_name": cuisine.name} for cuisine in self.cuisines]
+            "cuisines": [{"cuisine_id": cuisine.id, "cuisine_name": cuisine.name} for cuisine in self.cuisines],
+            "menus": [menu.to_dict() for menu in self.menus]
+        }
+
+    def to_simple_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "address": self.address,
+            "description": self.description,
+            "cuisines": [{"cuisine_id": cuisine.id, "cuisine_name": cuisine.name} for cuisine in self.cuisines],
         }

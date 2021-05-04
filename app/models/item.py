@@ -8,3 +8,12 @@ class Item(db.Model):
     description = db.Column(db.String(500))
     price = db.Column(db.Numeric(asdecimal=False), nullable=False)
     restaurant_id = db.Column(db.Integer, db.ForeignKey("restaurants.id"))
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "description": self.description,
+            "price": self.price,
+            "restaurant_id": self.restaurant_id,
+        }
