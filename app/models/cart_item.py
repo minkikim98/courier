@@ -7,4 +7,5 @@ class CartItem(db.Model):
     cart_id = db.Column(db.Integer, db.ForeignKey("carts.id"))
     item_id = db.Column(db.Integer, db.ForeignKey("items.id"))
 
-    carts = db.relationship("Cart", back_populates="cart_items")
+    cart = db.relationship("Cart", back_populates="cart_items")
+    item = db.relationship("Item")
