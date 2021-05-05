@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoutButton from './auth/LogoutButton';
+import LogoutButton from '../auth/LogoutButton';
+import EditDateTimeButton from './EditDateTimeButton'
 
 const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left">
         <button>Toggle Menu</button>
-        <button>Delivery Time</button>
+        <EditDateTimeButton />
         <div> to </div>
         <button>Delivery Address</button>
       </div>
@@ -17,6 +18,7 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="navbar-right">
+        <form>Search Bar</form>
         <button>Cart</button>
       </div>
       
