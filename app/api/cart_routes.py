@@ -11,3 +11,8 @@ def get_cart_items():
         return user_cart.to_dict()
     return {'errors': ['Unauthorized']}
 
+@cart_routes.route("/", methods=["POST"])
+def add_cart_item():
+    if current_user.is_authenticated:
+        user_cart = Cart.query.get(current_user.id)
+
