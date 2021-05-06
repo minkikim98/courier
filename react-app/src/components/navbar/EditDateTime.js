@@ -7,6 +7,7 @@ const EditDateTime = () => {
 
     return (
         <div id="date-time">
+            <div id="close-date-time">X</div>
             <input
                 name="date"
                 type="date"

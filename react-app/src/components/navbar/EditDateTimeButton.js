@@ -8,29 +8,30 @@ const EditDateTimeButton = () => {
         if (showEditDateTime) return;
         setShowEditDateTime(true);
     };
-
+    
     useEffect(() => {
         if (!showEditDateTime) return;
-
+        
         const closeEditDateTime = () => {
             setShowEditDateTime(false);
         };
+        
+        // const closeEditDateTimeIfOutside = (e) => {
+        //     console.log("inside closeedit")
+        //     if (document.getElementById('edit-date-time-button').contains(e.target))
+        //         openEditDateTime()
+        //     else if (!document.getElementById("date-time").contains(e.target) && !document.getElementById('edit-date-time-button').contains(e.target))
+        //         setShowEditDateTime(false);
+        // };
 
-        const closeEditDateTimeIfOutside = (e) => {
-            if (document.getElementById("date-time").contains(e.target))
-                setShowEditDateTime(false);
-        };
 
-
-        document.addEventListener('submit', closeEditDateTime);
-        document.addEventListener('click', closeEditDateTimeIfOutside);
-
-        // return () => document.getElementById("close-new-transaction-form").addEventListener('click', closeNewTransactionForm);
+        // document.addEventListener('submit', closeEditDateTime);
+        document.getElementById("close-date-time").addEventListener('click', closeEditDateTime);
     }, [showEditDateTime]);
 
     return (
         <>
-            <button className=""
+            <button id="edit-date-time-button"
                 onClick={openEditDateTime}>
                 (Current DateTime of Delivery)
             </button>

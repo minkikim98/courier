@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
 import EditDateTimeButton from './EditDateTimeButton'
+import SidebarMenuButton from './SidebarMenuButton'
 
 const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <button>Toggle Menu</button>
+        <SidebarMenuButton />
         <EditDateTimeButton />
         <div> to </div>
         <button>Delivery Address</button>
