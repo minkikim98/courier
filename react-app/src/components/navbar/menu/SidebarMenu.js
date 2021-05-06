@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoutButton from "../auth/LogoutButton"
+import LogoutButton from "../../auth/LogoutButton"
 
 const SidebarMenu = () => {
 

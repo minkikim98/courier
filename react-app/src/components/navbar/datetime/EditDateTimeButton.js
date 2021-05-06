@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+
 import EditDateTime from "./EditDateTime"
 
 const EditDateTimeButton = () => {
+    const dispatch = useDispatch();
+    const deliveryInfo = useSelector(state => state.delivery);
     const [showEditDateTime, setShowEditDateTime] = useState(false);
 
     const openEditDateTime = () => {
@@ -15,19 +19,11 @@ const EditDateTimeButton = () => {
         const closeEditDateTime = () => {
             setShowEditDateTime(false);
         };
-        
-        // const closeEditDateTimeIfOutside = (e) => {
-        //     console.log("inside closeedit")
-        //     if (document.getElementById('edit-date-time-button').contains(e.target))
-        //         openEditDateTime()
-        //     else if (!document.getElementById("date-time").contains(e.target) && !document.getElementById('edit-date-time-button').contains(e.target))
-        //         setShowEditDateTime(false);
-        // };
-
-
         // document.addEventListener('submit', closeEditDateTime);
         document.getElementById("close-date-time").addEventListener('click', closeEditDateTime);
     }, [showEditDateTime]);
+
+    const now = Date.now();
 
     return (
         <>

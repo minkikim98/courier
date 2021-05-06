@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
-import EditDateTimeButton from './EditDateTimeButton'
-import SidebarMenuButton from './SidebarMenuButton'
+import EditDateTimeButton from './datetime/EditDateTimeButton'
+import SidebarMenuButton from './menu/SidebarMenuButton'
+import AddressFormButton from './address/AddressFormButton'
+import ShowCartButton from '../cart/ShowCartButton'
 
 const NavBar = () => {
   return (
@@ -11,7 +13,7 @@ const NavBar = () => {
         <SidebarMenuButton />
         <EditDateTimeButton />
         <div> to </div>
-        <button>Delivery Address</button>
+        <AddressFormButton />
       </div>
       <div className="navbar-center">
         <Link to="/">
@@ -19,8 +21,8 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="navbar-right">
-        <form>Search Bar</form>
-        <button>Cart</button>
+        <input type="text" placeholder="Search"/>
+        <ShowCartButton />
       </div>
       
     </div>
