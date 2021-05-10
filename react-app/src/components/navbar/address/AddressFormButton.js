@@ -29,7 +29,7 @@ const AddressFormButton = () => {
         <>
             <button id="address-form-button"
                 onClick={openAddressForm}>
-                (Current Address)
+                {deliveryInfo.address}
             </button>
             {showAddressForm && <AddressForm />}
         </>

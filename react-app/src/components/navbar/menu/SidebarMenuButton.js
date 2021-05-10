@@ -24,7 +24,7 @@ const SidebarMenuButton = () => {
         <>
             <button id="sidebar-menu-button"
                 onClick={openSidebarMenu}>
-                Menu
+                <i className="fas fa-bars"></i>
             </button>
             {showSidebarMenu && <SidebarMenu />}
         </>

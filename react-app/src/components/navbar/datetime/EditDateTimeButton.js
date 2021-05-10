@@ -5,7 +5,7 @@ import EditDateTime from "./EditDateTime"
 
 const EditDateTimeButton = () => {
     const dispatch = useDispatch();
-    const deliveryInfo = useSelector(state => state.delivery);
+    const deliveryDateTimeInfo = useSelector(state => state.delivery.dateTime);
     const [showEditDateTime, setShowEditDateTime] = useState(false);
 
     const openEditDateTime = () => {
@@ -23,13 +23,13 @@ const EditDateTimeButton = () => {
         document.getElementById("close-date-time").addEventListener('click', closeEditDateTime);
     }, [showEditDateTime]);
 
-    const now = Date.now();
+    
 
     return (
         <>
             <button id="edit-date-time-button"
                 onClick={openEditDateTime}>
-                (Current DateTime of Delivery)
+                {deliveryDateTimeInfo.toDateString() + ", " + deliveryDateTimeInfo.toLocaleTimeString("en-US").slice(0, -6) + deliveryDateTimeInfo.toLocaleTimeString("en-US").slice(-3)}
             </button>
             {showEditDateTime && <EditDateTime />}
         </>

@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.navbar-left {
+    display: flex;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.navbar-left button {
+    border: none;
+    /* padding: 5px; */
+    background-color: transparent;
+}
+
+.navbar-center {
+    padding: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    padding: 10px;
+}

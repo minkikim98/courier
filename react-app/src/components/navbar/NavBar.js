@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoutButton from '../auth/LogoutButton';
+// import LogoutButton from '../auth/LogoutButton';
 import EditDateTimeButton from './datetime/EditDateTimeButton'
 import SidebarMenuButton from './menu/SidebarMenuButton'
 import AddressFormButton from './address/AddressFormButton'
 import ShowCartButton from '../cart/ShowCartButton'
+
+import "./Navbar.css"
 
 const NavBar = () => {
   return (

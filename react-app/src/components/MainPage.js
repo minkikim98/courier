@@ -5,6 +5,9 @@ const MainPage = () => {
     return (
         <div>
             <NavBar />
+            <div className="main-body">
+
+            </div>
         </div>
     )
 }

@@ -1,0 +1,19 @@
+#date-time {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    top: 40px;
+    left: 30px;
+
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* #date-time label {
+    padding: 10px;
+} */
+
+/* #date-time input {
+    padding: 10px;
+} */

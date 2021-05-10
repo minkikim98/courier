@@ -24,7 +24,7 @@ const ShowCartButton = () => {
         <>
             <button id="cart"
                 onClick={openCart}>
-                Cart
+                <i className="fas fa-shopping-cart"></i>
             </button>
             {showCart && <Cart />}
         </>
