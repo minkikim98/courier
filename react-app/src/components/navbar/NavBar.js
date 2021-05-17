@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import LogoutButton from '../auth/LogoutButton';
-import EditDateTimeButton from './datetime/EditDateTimeButton'
-import SidebarMenuButton from './menu/SidebarMenuButton'
-import AddressFormButton from './address/AddressFormButton'
-import ShowCartButton from '../cart/ShowCartButton'
+import EditDateTimeButton from './datetime/EditDateTimeButton';
+import SidebarMenuButton from './menu/SidebarMenuButton';
+import AddressFormButton from './address/AddressFormButton';
+import ShowCartButton from '../cart/ShowCartButton';
+
+import logo from "../../images/logo.png";
 
 import "./Navbar.css"
 
@@ -18,15 +20,15 @@ const NavBar = () => {
         <AddressFormButton />
       </div>
       <div className="navbar-center">
-        <Link to="/">
-          Courier
+        <img src={logo}></img>
+        <Link to="/" className="navbar-center-item">
+          COURIER
         </Link>
       </div>
       <div className="navbar-right">
         <input type="text" placeholder="Search"/>
         <ShowCartButton />
       </div>
-      
     </div>
   );
 }

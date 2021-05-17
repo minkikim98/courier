@@ -6,8 +6,19 @@
     left: 30px;
 
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
     background-color: white;
+}
+
+#edit-date-time-button {
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(0, 191, 155);
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* #date-time label {

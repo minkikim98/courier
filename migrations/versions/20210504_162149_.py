@@ -21,6 +21,7 @@ def upgrade():
     op.create_table('cuisines',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=100), nullable=False),
+    sa.Column('image_url', sa.String(length=255), nullable=False),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_table('restaurants',
@@ -28,6 +29,7 @@ def upgrade():
     sa.Column('name', sa.String(length=50), nullable=False),
     sa.Column('address', sa.String(length=50), nullable=False),
     sa.Column('description', sa.String(length=300), nullable=False),
+    sa.Column('image_url', sa.String(length=300), nullable=False),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('address')
     )

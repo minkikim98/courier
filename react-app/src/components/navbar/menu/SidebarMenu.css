@@ -6,8 +6,18 @@
     left: 0px;
 
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(203, 203, 203);
     background-color: white;
+}
+
+#sidebar-menu-button {
+    border: none;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: bold;
+    /* color: rgb(0, 191, 155); */
+    margin-left: 10px;
+    
 }
 
 .sidebar-menu-option {

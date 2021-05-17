@@ -1,6 +1,6 @@
-const SET_ADDRESS = "session/SET_ADDRESS";
-const SET_TIME = "session/SET_TIME";
-const SET_DATE = "session/SET_DATE";
+const SET_ADDRESS = "delivery/SET_ADDRESS";
+const SET_TIME = "delivery/SET_TIME";
+const SET_DATE = "delivery/SET_DATE";
 
 export const setTime = (hour, minute) => ({
     type: SET_TIME,
@@ -21,7 +21,8 @@ export const setAddress = (addressString) => ({
 })
 
 const now = new Date();
-const initialState = { address: "825 Battery St, San Francisco, CA 94111", dateTime: now };
+// 825 Battery St, San Francisco, CA 94111
+const initialState = { address: "825 Battery St", dateTime: now };
 
 export default function reducer(state = initialState, action) {
     const copyState = { ...state }
@@ -34,11 +35,11 @@ export default function reducer(state = initialState, action) {
             copyState.dateTime.setHours(parseInt(action.hour));
             return copyState;
         case SET_DATE:
-            console.log(parseInt(action.year))
+            // console.log(parseInt(action.year))
             copyState.dateTime.setFullYear(parseInt(action.year));
             copyState.dateTime.setMonth(parseInt(action.month) - 1);
             copyState.dateTime.setDate(parseInt(action.day));
-            console.log(copyState)
+            // console.log(copyState)
             return copyState;
         default:
             return state;

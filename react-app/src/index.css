@@ -2,5 +2,16 @@
 .main-body {
     display: flex;
     flex-direction: column;
-    
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+    width: 1000px;
+
+    border: 1px solid red;
+}
+
+body {
+    background-color: whitesmoke;
 }

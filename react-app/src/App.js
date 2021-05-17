@@ -7,7 +7,9 @@ import SignUpForm from "./components/auth/SignUpForm";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import UsersList from "./components/UsersList";
 import User from "./components/User";
-import MainPage from "./components/MainPage";
+import MainPage from "./components/main/MainPage";
+import IntroPage from "./components/IntroPage";
+import SingleCuisine from "./components/cuisines/SingleCuisine";
 // import { authenticate } from "./services/auth";
 import { authenticate } from "./store/session";
 
@@ -45,6 +47,12 @@ function App() {
         </ProtectedRoute>
         <Route path="/" exact={true}>
           <MainPage />
+        </Route>
+        <Route path="/about" exact={true}>
+          <IntroPage />
+        </Route>
+        <Route path="/cuisines/:cuisineId" exact={true}>
+          <SingleCuisine />
         </Route>
       </Switch>
     </BrowserRouter>

@@ -1,0 +1,16 @@
+.cuisines-container {
+    display: flex;
+}
+
+.cuisine {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cuisine img {
+    width: 50px;
+    border-radius: 30px;
+}

@@ -22,7 +22,7 @@ const ShowCartButton = () => {
 
     return (
         <>
-            <button id="cart"
+            <button id="cart-button"
                 onClick={openCart}>
                 <i className="fas fa-shopping-cart"></i>
             </button>
