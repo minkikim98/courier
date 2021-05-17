@@ -4,13 +4,15 @@ import session from './session'
 import delivery from './delivery'
 import cuisine from './cuisine'
 import restaurants from './restaurants'
+import cart from './cart'
 
 
 const rootReducer = combineReducers({
     session,
     delivery,
     cuisine,
-    restaurants
+    restaurants,
+    cart
 });
 
 let enhancer;

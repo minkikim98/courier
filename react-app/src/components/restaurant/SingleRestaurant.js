@@ -11,8 +11,6 @@ const SingleRestaurant = () => {
     const dispatch = useDispatch();
     const restaurantInfo = useSelector(state => state.restaurants.restaurant)
     const restaurantId = useParams().restaurantId;
-    console.log(typeof restaurantId);
-    console.log("hello", typeof restaurantInfo.id);
 
     const getRestaurantInfo = async (e) => {
         await dispatch(getSingleRestaurant(restaurantId));
@@ -22,8 +20,8 @@ const SingleRestaurant = () => {
         if (restaurantInfo.id !== parseInt(restaurantId)) getRestaurantInfo();
     });
 
-    const addToCart = (e) => {
-        console.log(e.target)
+    const addToCart = (itemId) => {
+        console.log(itemId)
     }    
 
     return (
@@ -42,7 +40,7 @@ const SingleRestaurant = () => {
                                 <div>{item.name}</div>
                                 <div>{item.description}</div>
                                 <div>${item.price}</div>
-                                <button onClick={addToCart}>+</button>
+                                <button onClick={e => addToCart(item.id)}>+</button>
                             </div>
                         ))}
 
