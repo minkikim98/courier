@@ -3,12 +3,14 @@ import thunk from 'redux-thunk';
 import session from './session'
 import delivery from './delivery'
 import cuisine from './cuisine'
+import restaurants from './restaurants'
 
 
 const rootReducer = combineReducers({
     session,
     delivery,
-    cuisine
+    cuisine,
+    restaurants
 });
 
 let enhancer;

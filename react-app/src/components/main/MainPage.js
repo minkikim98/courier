@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import NavBar from "../navbar/NavBar"
 import Categories from "./Categories"
 import Footer from "../footer/Footer"
+import Popular from "./Popular"
 
 const MainPage = () => {
     return (
@@ -9,8 +11,7 @@ const MainPage = () => {
             <NavBar />
             <div className="main-body">
                 <Categories />
-                <div>National Favorites</div>
-                <div>Most Popular Restaurants in SF</div>
+                <Popular />
             </div>
             <Footer />
         </div>

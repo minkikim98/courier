@@ -11,7 +11,7 @@ const setRestaurant = (restaurant) => ({
     payload: restaurant
 })
 
-export const getAllRestaurnts = () => async (dispatch) => {
+export const getAllRestaurants = () => async (dispatch) => {
     const response = await fetch("/api/restaurants/", {
         headers: {
             "Content-Type": "application/json",
@@ -21,6 +21,16 @@ export const getAllRestaurnts = () => async (dispatch) => {
     dispatch(setRestaurants(data));
 }
 
+export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
+    const response = await fetch(`/api/restaurants/${restaurantId}`, {
+        headers: {
+            "Content-Type": "application/json",
+        }
+    });
+    const data = await response.json();
+    dispatch(setRestaurant(data));
+}
+
 const initialState = { restaurants: {}, restaurant: {} };
 
 export default function reducer(state = initialState, action) {
@@ -28,6 +38,9 @@ export default function reducer(state = initialState, action) {
     switch (action.type) {
         case SET_RESTAURANTS:
             copyState.restaurants = action.payload;
+            return copyState;
+        case SET_RESTAURANT:
+            copyState.restaurant = action.payload;
             return copyState;
         default:
             return state;

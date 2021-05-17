@@ -1,0 +1,30 @@
+.popular-container {
+    display: flex;
+    /* font-size: 30px; */
+    padding: 10px;
+}
+
+.popular__label {
+    font-size: 30px;
+}
+
+.popular__restaurants {
+    /* padding: 10px; */
+    margin-left: 30px;
+    /* border: 1px solid blue; */
+}
+
+.popular__restaurant {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.popular__restaurant * {
+    padding: 10px;
+}
+
+.popular__restaurant img {
+    max-width: 500px;
+    max-height: 300px;
+}
