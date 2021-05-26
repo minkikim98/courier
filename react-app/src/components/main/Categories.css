@@ -1,13 +1,29 @@
 .cuisines-container {
     display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 
 .cuisine {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     align-items: center;
+
+    padding: 10px;
+
+    color: black;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+
+    /* border-radius: 10px; */
+
+    /* border: 1px solid blue; */
+}
+
+.cuisine:hover {
+    font-size: 15px;
+    color: rgb(0, 191, 155);
 }
 
 .cuisine img {

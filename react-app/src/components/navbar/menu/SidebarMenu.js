@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoutButton from "../../auth/LogoutButton"
 
 import "./SidebarMenu.css"
@@ -11,10 +12,16 @@ const SidebarMenu = () => {
                 <i className="fas fa-times"></i>
             </div>
             <div className="sidebar-menu-options">
-                <button className="sidebar-menu-option">
+                <Link className="sidebar-menu-option" to='/'>
                     Home
-                </button>
+                </Link>
                 <LogoutButton />
+                <Link className="sidebar-menu-option" to='/login'> 
+                    Login
+                </Link>
+                <Link className="sidebar-menu-option" to='/signup'> 
+                    Sign Up
+                </Link>
             </div>
         </div>
     )

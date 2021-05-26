@@ -1,7 +1,10 @@
 .popular-container {
     display: flex;
+    justify-content: center;
     /* font-size: 30px; */
     padding: 10px;
+
+    /* border: 1px solid blue; */
 }
 
 .popular__label {

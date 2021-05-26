@@ -8,7 +8,7 @@ import "./Popular.css"
 const Popular = () => {
     const dispatch = useDispatch();
 
-    const restaurantsToDisplay = useSelector(state => state.restaurants.restaurants)
+    const restaurantsToDisplay = useSelector(state => state.restaurants.restaurants);
 
     const getAllRestaurantsToDisplay = async (e) => {
         await dispatch(getAllRestaurants());
