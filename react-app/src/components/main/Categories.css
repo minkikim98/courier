@@ -1,6 +1,6 @@
 .cuisines-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     /* border: 1px solid red; */
 }
 
@@ -13,7 +13,7 @@
 
     color: black;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 
     /* border-radius: 10px; */
@@ -21,7 +21,7 @@
     /* border: 1px solid blue; */
 }
 
-.cuisine:hover {
+.cuisine-active {
     font-size: 15px;
     color: rgb(0, 191, 155);
 }
@@ -29,4 +29,16 @@
 .cuisine img {
     width: 50px;
     border-radius: 30px;
+}
+
+
+.cuisine:hover {
+    font-size: 15px;
+    color: rgb(0, 191, 155);
+    transition-duration: 200ms;
+}
+
+.cuisine:hover img {
+    width: 55px;
+    transition-duration: 200ms;
 }

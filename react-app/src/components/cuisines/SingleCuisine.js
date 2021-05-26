@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { getFilteredRestaurants } from "../../store/restaurants";
 
 import NavBar from "../navbar/NavBar";
+import Categories from "../main/Categories";
 
 const SingleCuisine = () => {
     const cuisineId = useParams().cuisineId;
@@ -20,13 +21,14 @@ const SingleCuisine = () => {
     };
 
     useEffect(() => {
-        if (!Object.keys(restaurantsToDisplay).length || cuisine_filter_id !== cuisineId) getFilteredRestaurantsToDisplay();
+        if (cuisine_filter_id !== cuisineId) getFilteredRestaurantsToDisplay();
     });
 
     return (
         <div>
             <NavBar />
             <div className="main-body">
+                <Categories />
                 <div>
                     {restaurantsToDisplay && Object.values(restaurantsToDisplay).map(restaurant => (
                         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="popular__restaurant">

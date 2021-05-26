@@ -1,19 +1,46 @@
 .popular-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* font-size: 30px; */
     padding: 10px;
 
     /* border: 1px solid blue; */
 }
 
+.popular__left {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.popular__view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    /* height: 30px; */
+    padding: 10px;
+    margin-top: 30px;
+
+    border-radius: 10px;
+    background-color: rgb(0, 191, 155);
+    color: white;
+}
+
+.popular__view-all i {
+    margin-left: 10px;
+}
+
 .popular__label {
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 .popular__restaurants {
     /* padding: 10px; */
-    margin-left: 30px;
+    /* margin-left: 30px; */
     /* border: 1px solid blue; */
 }
 
