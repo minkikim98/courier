@@ -10,7 +10,7 @@ import "./SingleRestaurant.css"
 const SingleRestaurant = () => {
     const dispatch = useDispatch();
     const restaurantInfo = useSelector(state => state.restaurants.restaurant)
-    const restaurantId = useParams().restaurantId;
+    const restaurantId = useParams().restaurantId; 
 
     const getRestaurantInfo = async (e) => {
         await dispatch(getSingleRestaurant(restaurantId));
