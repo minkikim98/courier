@@ -1,14 +1,15 @@
 const SET_RESTAURANTS = "restaurants/SET_RESTAURANTS";
 const SET_RESTAURANT = "restaurants/SET_RESTAURANT";
 
-const setRestaurants = (restaurants) => ({
+const setRestaurants = (restaurantsInfo) => ({
     type: SET_RESTAURANTS,
-    payload: restaurants
+    restaurants: restaurantsInfo.restaurants,
+    cuisine_filter_id: restaurantsInfo.cuisine_filter_id
 })
 
-const setRestaurant = (restaurant) => ({
+const setRestaurant = (restaurantInfo) => ({
     type: SET_RESTAURANT,
-    payload: restaurant
+    restaurant: restaurantInfo
 })
 
 export const getAllRestaurants = () => async (dispatch) => {
@@ -41,16 +42,17 @@ export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
     dispatch(setRestaurant(data));
 }
 
-const initialState = { restaurants: {}, restaurant: {} };
+const initialState = { restaurants: {}, restaurant: {}, cuisine_filter_id: 0 };
 
 export default function reducer(state = initialState, action) {
     const copyState = { ...state }
     switch (action.type) {
         case SET_RESTAURANTS:
-            copyState.restaurants = action.payload;
+            copyState.restaurants = action.restaurants;
+            copyState.cuisine_filter_id = action.cuisine_filter_id;
             return copyState;
         case SET_RESTAURANT:
-            copyState.restaurant = action.payload;
+            copyState.restaurant = action.restaurant;
             return copyState;
         default:
             return state;

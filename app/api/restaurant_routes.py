@@ -6,7 +6,7 @@ restaurant_routes = Blueprint('restaurants', __name__)
 @restaurant_routes.route("/")
 def get_all_restaurants():
     all_restaurants = Restaurant.query.all()
-    return { restaurant.id : restaurant.to_simple_dict() for restaurant in all_restaurants }
+    return { "cuisine_filter_id" : 0, "restaurants": { restaurant.id : restaurant.to_simple_dict() for restaurant in all_restaurants } }
 
 @restaurant_routes.route("/<restaurant_id>")
 def get_restaurant(restaurant_id):
@@ -16,7 +16,7 @@ def get_restaurant(restaurant_id):
 @restaurant_routes.route("/cuisines/<cuisine_id>")
 def get_restaurants_for_cuisine(cuisine_id):
     cuisine = Cuisine.query.get(cuisine_id)
-    return { restaurant.id : restaurant.to_simple_dict() for restaurant in cuisine.restaurants }
+    return { "cuisine_filter_id" : cuisine_id, "restaurants": { restaurant.id : restaurant.to_simple_dict() for restaurant in cuisine.restaurants } }
 
 @restaurant_routes.route("/test-add-cart")
 def test_cart():

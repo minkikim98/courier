@@ -12,23 +12,21 @@ const SingleCuisine = () => {
 
     const dispatch = useDispatch();
 
-    const restaurantsToDisplay = useSelector(state => state.restaurants.restaurants);
+    const restaurantsToDisplay = useSelector(state => state.restaurants.restaurants) || {};
+    const cuisine_filter_id = useSelector(state => state.restaurants.cuisine_filter_id);
 
     const getFilteredRestaurantsToDisplay = async (e) => {
         await dispatch(getFilteredRestaurants(cuisineId));
     };
 
     useEffect(() => {
-        // if (!Object.keys(restaurantsToDisplay).length) getFilteredRestaurantsToDisplay();
+        if (!Object.keys(restaurantsToDisplay).length || cuisine_filter_id !== cuisineId) getFilteredRestaurantsToDisplay();
     });
-
-    // getFilteredRestaurantsToDisplay();
 
     return (
         <div>
             <NavBar />
             <div className="main-body">
-                test
                 <div>
                     {restaurantsToDisplay && Object.values(restaurantsToDisplay).map(restaurant => (
                         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="popular__restaurant">
