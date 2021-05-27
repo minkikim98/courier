@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getCart } from "../../store/cart";
+import { removeFromCart } from "../../store/cart";
 
 import "./Cart.css"
 
@@ -16,6 +17,10 @@ const Cart = () => {
         if (data.errors) setErrors(data.errors);
     }
     
+    const removeFromCartCB = async (itemId) => {
+        await dispatch(removeFromCart(itemId));
+    }
+
     useEffect(() => {
         if (!Object.values(cartInfo).length) getCartItems();
     })
@@ -34,8 +39,8 @@ const Cart = () => {
                     {cartInfo.cart_items && cartInfo.cart_items.map(cartItem => (
                         <div key={cartItem.id} className="cart__item">
                             <div className="cart__item-name">{cartItem.item_name}</div>
-                            <div className="cart__item-quantity">Quantity: {cartItem.quantity}</div>
-                            <button className="cart__item-delete"><i class="fas fa-trash"></i></button>
+                            {/* <div className="cart__item-quantity">Quantity: {cartItem.quantity}</div> */}
+                            <button className="cart__item-delete" onClick={e => removeFromCartCB(cartItem.item_id)}><i className="fas fa-trash"></i></button>
                         </div>
                     ))}
                 </div>

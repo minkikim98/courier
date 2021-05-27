@@ -22,7 +22,8 @@
 .cart__item {
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    border-bottom: 1px solid rgb(205, 205, 205);
 }
 
 .cart__item-name {
@@ -31,7 +32,12 @@
 
 .cart__item-quantity {
     padding: 10px;
-    
+}
+
+.cart__item-delete {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
 }
 
 #cart-button {

@@ -33,6 +33,19 @@ export const addToCart = (itemId) => async (dispatch) => {
     return data;
 }
 
+export const removeFromCart = (itemId) => async (dispatch) => {
+    const response = await fetch(`/api/cart/${itemId}`, {
+        method: 'DELETE',
+        headers: {
+            "Content-Type": "application/json",
+        }
+    });
+    const data = await response.json();
+    // if (data.errors) return data; 
+    dispatch(setCart(data));
+    return data;
+}
+
 export const clearCart = () => (dispatch) => {
     dispatch(setCart({}));
     return {};

@@ -29,3 +29,16 @@ def add_cart_item():
         
     return {'errors': ['Unauthorized']}
 
+
+@cart_routes.route("/<item_id>", methods=["DELETE"])
+def remove_cart_item(item_id):
+    if current_user.is_authenticated:
+        user_cart = Cart.query.get(current_user.id)
+        cart_item = CartItem.query.filter(CartItem.item_id == item_id).first()
+
+        db.session.delete(cart_item)
+        db.session.commit()
+        return user_cart.to_dict()
+        
+    return {'errors': ['Unauthorized']}
+
