@@ -13,7 +13,7 @@ const MainPage = () => {
                 <Categories />
                 <Popular />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

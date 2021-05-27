@@ -27,23 +27,24 @@ const SingleRestaurant = () => {
     return (
         <div>
             <NavBar />
-            {restaurantInfo && <div className="main-body">
+            {restaurantInfo && <div className="main-body restaurant">
                 <img src={restaurantInfo.image_url} className="restaurant-banner"></img>
                 <div className="restaurant__name">{restaurantInfo.name}</div>
                 <div className="restaurant__address">{restaurantInfo.address}</div>
                 <div className="restaurant__description">{restaurantInfo.description}</div>
                 {restaurantInfo.menus && Object.values(restaurantInfo.menus).map(menu => (
                     <div key={menu.id} className="restaurant__menu">
-                        <div>{menu.name}</div>
-                        {menu.menu_items && Object.values(menu.menu_items).map(item => (
-                            <div className="restaurant__menu-item" key={item.id}>
-                                <div>{item.name}</div>
-                                <div>{item.description}</div>
-                                <div>${item.price}</div>
-                                <button onClick={e => addToCart(item.id)}>+</button>
-                            </div>
-                        ))}
-
+                        <div className="restaurant__menu-name">{menu.name}</div>
+                        <div className="restaurant__menu-items">
+                            {menu.menu_items && Object.values(menu.menu_items).map(item => (
+                                <div className="restaurant__menu-item" key={item.id}>
+                                    <div className="item__name">{item.name}</div>
+                                    <div className="item__description">{item.description}</div>
+                                    <div>${item.price}</div>
+                                    <button onClick={e => addToCart(item.id)}><i class="fas fa-plus"></i></button>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>}

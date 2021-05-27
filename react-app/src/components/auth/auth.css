@@ -1,4 +1,4 @@
-#login-form {
+#auth-form {
     display: flex;
     flex-direction: column;
 
@@ -6,12 +6,13 @@
     width: 350px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 
     border: 1px solid rgb(0, 191, 155);
     border-radius: 10px;
 }
 
-.login-form__field {
+.auth-form__field {
     display: flex;
     flex-direction: column;
 
@@ -22,7 +23,7 @@
     font-weight: 600;
 }
 
-.login-label {
+.auth-label {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,15 +51,15 @@
     padding: 10px;
 }
 
-.login-form__field input {
-    height: 20px;
+.auth-form__field input {
+    height: 15px;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid black;
     margin-top: 10px;
 }
 
-#login-form button {
+#auth-form button {
     /* padding: 10px; */
     height: 35px;
     border-radius: 10px;
@@ -67,7 +68,7 @@
     color: white;
 }
 
-.login-error {
+.auth-error {
     color: red;
     padding: 10px;
 }

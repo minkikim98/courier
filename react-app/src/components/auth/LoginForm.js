@@ -37,18 +37,18 @@ const LoginForm = () => {
     <div>
       <SimpleNavBar />
       <div className="main-body">
-        <div className="login-label">
+        <div className="auth-label">
           <div className="label-banner">Sign In</div>
-          <div className="label-message">Welcome! We're genuinely glad to have you back. From late-night taco cravings to gatherings with friends, we have you covered - in an eco friendly and environmentally responsible way!</div>
+          <div className="label-message">Welcome back! We're genuinely glad to see you. From late-night taco cravings to gatherings with friends, we have you covered - in an eco friendly and environmentally responsible way!</div>
           <Link to="/sign-up" className="signup-link">Don't have an account? Sign up here!</Link>
         </div>
-        <form onSubmit={onLogin} id="login-form">
+        <form onSubmit={onLogin} id="auth-form">
           <div>
             {errors.map((error) => (
-              <div className="login-error">{error}</div>
+              <div className="auth-error">{error}</div>
             ))}
           </div>
-          <div className="login-form__field">
+          <div className="auth-form__field">
             <label htmlFor="email">Email</label>
             <input
               name="email"
@@ -58,7 +58,7 @@ const LoginForm = () => {
               onChange={updateEmail}
             />
           </div>
-          <div className="login-form__field">
+          <div className="auth-form__field">
             <label htmlFor="password">Password</label>
             <input
               name="password"
@@ -68,7 +68,7 @@ const LoginForm = () => {
               onChange={updatePassword}
             />
           </div>
-          <div className="login-form__field">
+          <div className="auth-form__field">
             <button type="submit">Login</button>
           </div>
         </form>
