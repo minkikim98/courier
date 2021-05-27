@@ -1,10 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import LogoutButton from "../../auth/LogoutButton"
 
 import "./SidebarMenu.css"
 
 const SidebarMenu = () => {
+    const user = useSelector(state => state.session.user);
 
     return (
         <div id="sidebar-menu">
@@ -15,13 +17,13 @@ const SidebarMenu = () => {
                 <Link className="sidebar-menu-option" to='/'>
                     Home
                 </Link>
-                <LogoutButton />
-                <Link className="sidebar-menu-option" to='/login'> 
+                {user && <LogoutButton />}
+                {!user && <Link className="sidebar-menu-option" to='/login'> 
                     Login
-                </Link>
-                <Link className="sidebar-menu-option" to='/signup'> 
+                </Link>}
+                {!user && <Link className="sidebar-menu-option" to='/sign-up'> 
                     Sign Up
-                </Link>
+                </Link>}
             </div>
         </div>
     )

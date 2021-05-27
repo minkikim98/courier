@@ -1,4 +1,5 @@
-from .db import db 
+from .db import db
+from .item import Item
 
 class CartItem(db.Model):
     __tablename__ = "cart_items"
@@ -11,9 +12,11 @@ class CartItem(db.Model):
     item = db.relationship("Item")
 
     def to_dict(self):
+        item = Item.query.get(self.item_id)
         return {
             "id": self.id,
             "quantity": self.quantity,
             "cart_id": self.cart_id,
-            "item_id": self.item_id
+            "item_id": self.item_id,
+            "item_name": item.name
         }

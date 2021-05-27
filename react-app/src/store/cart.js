@@ -17,6 +17,27 @@ export const getCart = () => async (dispatch) => {
     return data;
 }
 
+export const addToCart = (itemId) => async (dispatch) => {
+    const response = await fetch("/api/cart/", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            item_id: itemId
+        })
+    });
+    const data = await response.json();
+    // if (data.errors) return data; 
+    dispatch(setCart(data));
+    return data;
+}
+
+export const clearCart = () => (dispatch) => {
+    dispatch(setCart({}));
+    return {};
+}
+
 const initialState = {};
 
 export default function reducer(state = initialState, action) {

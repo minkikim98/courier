@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import { getSingleRestaurant } from "../../store/restaurants";
+import { addToCart } from "../../store/cart";
 import NavBar from "../navbar/NavBar"
 
 import "./SingleRestaurant.css"
@@ -20,8 +21,8 @@ const SingleRestaurant = () => {
         if (restaurantInfo.id !== parseInt(restaurantId)) getRestaurantInfo();
     });
 
-    const addToCart = (itemId) => {
-        console.log(itemId)
+    const addToCartCB = async (itemId) => {
+        await dispatch(addToCart(itemId));
     }    
 
     return (
@@ -41,7 +42,7 @@ const SingleRestaurant = () => {
                                     <div className="item__name">{item.name}</div>
                                     <div className="item__description">{item.description}</div>
                                     <div>${item.price}</div>
-                                    <button onClick={e => addToCart(item.id)}><i class="fas fa-plus"></i></button>
+                                    <button onClick={e => addToCartCB(item.id)}><i className="fas fa-plus"></i></button>
                                 </div>
                             ))}
                         </div>

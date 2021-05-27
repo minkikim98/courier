@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import  { useDispatch, useSelector } from "react-redux";
 import { Redirect, Link } from "react-router-dom";
 import { login } from "../../store/session";
+import { getCart } from "../../store/cart";
 import SimpleNavBar from "../navbar/SimpleNavBar";
 
 import "./auth.css";
@@ -16,10 +17,19 @@ const LoginForm = () => {
   const onLogin = async (e) => {
     e.preventDefault();
     const data = await dispatch(login(email, password));
+    await dispatch(getCart());
     if (data.errors) {
       setErrors(data.errors);
     }
   };
+
+  const onDemoLogin = async (e) => {
+    const data = await dispatch(login("demo@aa.io", "password"));
+    await dispatch(getCart());
+    if (data.errors) {
+      setErrors(data.errors);
+    }
+  }
 
   const updateEmail = (e) => {
     setEmail(e.target.value);
@@ -70,6 +80,9 @@ const LoginForm = () => {
           </div>
           <div className="auth-form__field">
             <button type="submit">Login</button>
+          </div>
+          <div className="auth-form__field">
+            <button onClick={onDemoLogin}>Demo Login</button>
           </div>
         </form>
       </div>
