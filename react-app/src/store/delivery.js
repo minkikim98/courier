@@ -17,7 +17,7 @@ export const setDate = (year, month, day) => ({
 
 export const setAddress = (addressString) => ({
     type: SET_ADDRESS,
-    payload: addressString
+    address: addressString
 })
 
 const now = new Date();
@@ -28,7 +28,7 @@ export default function reducer(state = initialState, action) {
     const copyState = { ...state }
     switch (action.type) {
         case SET_ADDRESS:
-            copyState.address = action.payload;
+            copyState.address = action.address;
             return copyState;
         case SET_TIME:
             copyState.dateTime.setMinutes(parseInt(action.minute));

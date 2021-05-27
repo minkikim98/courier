@@ -24,6 +24,9 @@ const SidebarMenu = () => {
                 {!user && <Link className="sidebar-menu-option" to='/sign-up'> 
                     Sign Up
                 </Link>}
+                <Link className="sidebar-menu-option" to='/about'>
+                    About Us
+                </Link>
             </div>
         </div>
     )

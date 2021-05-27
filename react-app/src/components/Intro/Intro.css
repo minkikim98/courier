@@ -1,0 +1,43 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.intro__banner-text {
+    font-size: 120px;
+    letter-spacing: 5px;
+}
+
+.intro__caption {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.intro__description {
+    font-size: 28px;
+    margin-top: 50px;
+    width: 1000px;
+    line-height: 50px;
+}
+
+
+.intro__hero-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    /* height: 100%; */
+}
+
+.homepage-link {
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+}

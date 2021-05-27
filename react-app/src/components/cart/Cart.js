@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getCart } from "../../store/cart";
@@ -10,11 +10,11 @@ const Cart = () => {
     const dispatch = useDispatch();
     const cartInfo = useSelector(state => state.cart);
     const user = useSelector(state => state.session.user);
-    const [errors, setErrors] = useState([]);
+    // const [errors, setErrors] = useState([]);
 
     const getCartItems = async (e) => {
-        const data = await dispatch(getCart());
-        if (data.errors) setErrors(data.errors);
+        await dispatch(getCart());
+        // if (data.errors) setErrors(data.errors);
     }
     
     const removeFromCartCB = async (itemId) => {
@@ -43,6 +43,7 @@ const Cart = () => {
                             <button className="cart__item-delete" onClick={e => removeFromCartCB(cartItem.item_id)}><i className="fas fa-trash"></i></button>
                         </div>
                     ))}
+                    <button className="cart__checkout">Checkout</button>
                 </div>
             )
         }

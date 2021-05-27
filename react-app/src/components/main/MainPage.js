@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import NavBar from "../navbar/NavBar"
 import Categories from "./Categories"
-import Footer from "../footer/Footer"
+// import Footer from "../footer/Footer"
 import Popular from "./Popular"
 
 const MainPage = () => {

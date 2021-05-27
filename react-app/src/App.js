@@ -8,7 +8,7 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import UsersList from "./components/UsersList";
 import User from "./components/User";
 import MainPage from "./components/main/MainPage";
-import IntroPage from "./components/IntroPage";
+import IntroPage from "./components/Intro/IntroPage";
 import SingleCuisine from "./components/cuisines/SingleCuisine";
 import SingleRestaurant from "./components/restaurant/SingleRestaurant";
 // import { authenticate } from "./services/auth";

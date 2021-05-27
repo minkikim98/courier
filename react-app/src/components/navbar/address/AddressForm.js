@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { useDispatch } from 'react-redux';
+import { setAddress } from "../../../store/delivery"
+// import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 import "./AddressForm.css"
 
 const AddressForm = () => {
+    const dispatch = useDispatch();
 
-    const [address, setAddress] = useState("");
+    const [addressState, setAddressState] = useState("");
 
     return (
         <form id="address-form">
@@ -15,13 +18,14 @@ const AddressForm = () => {
             <input
                 id="address"
                 type="text"
-                value={address}
+                value={addressState}
                 onChange={(e) => {
-                    setAddress(e.target.value);
+                    setAddressState(e.target.value);
                     // console.log(e.target.value)
+                    dispatch(setAddress(e.target.value));
                 }}
             />
-            <button type="submit">Change Address</button>
+            {/* <button type="submit">Change Address</button> */}
             {/* <script>
                 let addressField;
                 function getSuggestions() {
@@ -33,9 +37,9 @@ const AddressForm = () => {
                     )
                 }
             </script> */}
-            <script
+            {/* <script
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzMYt6Ab9km0cWys7kcBBDjzvY_P6O5s0&libraries=places&callback=getSuggestions" async defer>
-            </script>
+            </script> */}
         </form>
     )
 }

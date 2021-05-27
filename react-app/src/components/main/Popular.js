@@ -25,7 +25,7 @@ const Popular = () => {
                 <div className="popular__label">Popular Restaurants in SF</div>
                 <div className="popular__view-all">
                     <div>See All</div>
-                    <i class="fas fa-arrow-right"></i>
+                    <i className="fas fa-arrow-right"></i>
                 </div>
             </div>
             <div className="popular__restaurants">
