@@ -8,7 +8,7 @@ import "./Navbar.css"
 const SimpleNavBar = () => {
     return (
         <div className="simple-navbar">
-            <img src={logo}></img>
+            <img src={logo} alt="Courier Logo"></img>
             <Link to="/" className="navbar-center-item">
                 COURIER
             </Link>

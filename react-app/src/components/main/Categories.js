@@ -23,7 +23,7 @@ const Categories = () => {
         <div className="cuisines-container">
             {cuisineInfo && Object.values(cuisineInfo).map(cuisine => (
                 <NavLink key={cuisine.id} to={`/cuisines/${cuisine.id}`} className="cuisine" activeClassName="cuisine-active">
-                    <img src={cuisine.image_url}></img>
+                    <img src={cuisine.image_url} alt={cuisine.name}></img>
                     {cuisine.name}
                 </NavLink>
             ))}

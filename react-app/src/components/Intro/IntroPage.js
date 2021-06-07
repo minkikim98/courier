@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 import "./Intro.css";
 
-import Logo from "../../images/logo.png"
+// import Logo from "../../images/logo.png"
 
 const IntroPage = () => {
     return (
         <div>
-            <img className="intro__hero-img" src="https://www.teahub.io/photos/full/38-388348_bicycle-wallpaper-hd.jpg"></img>
+            <img className="intro__hero-img" src="https://www.teahub.io/photos/full/38-388348_bicycle-wallpaper-hd.jpg" alt="Banner"></img>
             <div className="intro">
                 <div className="intro__banner-text">Welcome to Courier</div>
                 <div className="intro__caption">No gas. No fumes. Just fresh food pedaled straight to your doorstep.</div>

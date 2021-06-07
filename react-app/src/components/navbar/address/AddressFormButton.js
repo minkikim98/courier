@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import AddressForm from "./AddressForm"
 
 const AddressFormButton = () => {
-    const dispatch = useDispatch();
     const deliveryInfo = useSelector(state => state.delivery);
     const [showAddressForm, setShowAddressForm] = useState(false);
 
@@ -23,7 +22,7 @@ const AddressFormButton = () => {
         document.getElementById("close-address-form").addEventListener('click', closeAddressForm);
     }, [showAddressForm]);
 
-    const now = Date.now();
+    // const now = Date.now();
 
     return (
         <>

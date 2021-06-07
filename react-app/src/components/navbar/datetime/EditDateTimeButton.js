@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import EditDateTime from "./EditDateTime"
 
 const EditDateTimeButton = () => {
-    const dispatch = useDispatch();
     const deliveryDateTimeInfo = useSelector(state => state.delivery.dateTime);
     const [showEditDateTime, setShowEditDateTime] = useState(false);
 

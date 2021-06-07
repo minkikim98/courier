@@ -32,7 +32,7 @@ const SingleCuisine = () => {
                 <div>
                     {restaurantsToDisplay && Object.values(restaurantsToDisplay).map(restaurant => (
                         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="popular__restaurant">
-                            <img src={restaurant.image_url}></img>
+                            <img src={restaurant.image_url} alt={restaurant.name}></img>
                             <div>{restaurant.name}</div>
                             <div>{restaurant.address}</div>
                         </Link>

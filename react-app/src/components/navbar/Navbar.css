@@ -1,11 +1,15 @@
 .navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 180px 1fr;
+    grid-template-areas: "navbar-left navbar-center navbar-right";
+    /* justify-content: space-between; */
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
-    justify-content: space-between;
+
     background-color: white;
+
     /* border: 1px solid blue; */
     border-bottom: 1px solid rgb(203, 203, 203);
 }
@@ -14,22 +18,22 @@
     display: flex;
     /* padding: 10px; */
     align-items: center;
+
+    /* margin-right: auto; */
     /* border: 1px solid green; */
+
+    grid-area: navbar-left;
 }
 
-/* .navbar-left button {
-    border: none;
-    background-color: transparent;
-    font-size: 17px;
-    font-weight: bold;
-    color: rgb(0, 191, 155);
-} */
 
 .navbar-center {
     /* padding: 10px; */
     display: flex;
     align-items: center;
-    margin-right: 15%;
+    /* margin-right: 15%; */
+    
+    /* border: 1px solid blue; */
+    grid-area: navbar-center;
 }
 
 .navbar-center img {
@@ -48,8 +52,14 @@
 
 .navbar-right {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+
+    /* border: 1px solid red; */
     /* padding: 10px; */
+    
+    /* margin-left: auto; */
+    grid-area: navbar-right;
 }
 
 .navbar-right input {

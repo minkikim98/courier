@@ -31,7 +31,7 @@ const Popular = () => {
             <div className="popular__restaurants">
                 {restaurantsToDisplay && Object.values(restaurantsToDisplay).map(restaurant => (
                     <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="popular__restaurant">
-                        <img src={restaurant.image_url}></img>
+                        <img src={restaurant.image_url} alt={restaurant.name}></img>
                         <div className="popular__name">{restaurant.name}</div>
                         <div className="popular__address">{restaurant.address}</div>
                     </Link>

@@ -29,7 +29,7 @@ const SingleRestaurant = () => {
         <div>
             <NavBar />
             {restaurantInfo && <div className="main-body restaurant">
-                <img src={restaurantInfo.image_url} className="restaurant-banner"></img>
+                <img src={restaurantInfo.image_url} className="restaurant-banner" alt={restaurantInfo.name}></img>
                 <div className="restaurant__name">{restaurantInfo.name}</div>
                 <div className="restaurant__address">{restaurantInfo.address}</div>
                 <div className="restaurant__description">{restaurantInfo.description}</div>

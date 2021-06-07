@@ -20,7 +20,7 @@ const NavBar = () => {
         <AddressFormButton />
       </div>
       <div className="navbar-center">
-        <img src={logo}></img>
+        <img src={logo} alt="Courier Logo"></img>
         <Link to="/" className="navbar-center-item">
           COURIER
         </Link>

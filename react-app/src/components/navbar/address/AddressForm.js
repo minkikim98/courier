@@ -15,6 +15,9 @@ const AddressForm = () => {
             <div id="close-address-form">
                 <i className="fas fa-times"></i>
             </div>
+            <label>
+                Edit your delivery address.
+            </label>
             <input
                 id="address"
                 type="text"
