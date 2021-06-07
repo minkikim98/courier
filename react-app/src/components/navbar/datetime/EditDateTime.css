@@ -19,6 +19,12 @@
     color: rgb(0, 191, 155);
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
+
+    cursor: pointer;
+}
+
+#close-date-time i {
+    cursor: pointer;
 }
 
 /* #date-time label {

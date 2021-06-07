@@ -66,6 +66,8 @@
     border: none;
     background-color: rgb(0, 191, 156);
     color: white;
+
+    cursor: pointer;
 }
 
 .auth-error {

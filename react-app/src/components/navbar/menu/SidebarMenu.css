@@ -18,6 +18,11 @@
     /* color: rgb(0, 191, 155); */
     margin-left: 10px;
     
+    cursor: pointer;
+}
+
+#close-sidebar-menu i {
+    cursor: pointer;
 }
 
 .sidebar-menu-option {

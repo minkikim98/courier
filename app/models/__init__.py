@@ -6,6 +6,8 @@ from .user import User
 from .restaurant import Restaurant
 from .cuisine import Cuisine
 from .restaurant_cuisines import restaurant_cuisines
+from .tag import Tag
+from .restaurant_tags import restaurant_tags
 
 # Import menu data.
 from .item import Item

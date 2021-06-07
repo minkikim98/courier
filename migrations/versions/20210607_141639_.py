@@ -1,8 +1,8 @@
 """empty message
 
-Revision ID: efa7e1c03a6b
+Revision ID: 6c7365ca0981
 Revises: 
-Create Date: 2021-05-04 16:21:49.074798
+Create Date: 2021-06-07 14:16:39.179947
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'efa7e1c03a6b'
+revision = '6c7365ca0981'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -32,6 +32,11 @@ def upgrade():
     sa.Column('image_url', sa.String(length=300), nullable=False),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('address')
+    )
+    op.create_table('tags',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('name', sa.String(length=100), nullable=False),
+    sa.PrimaryKeyConstraint('id')
     )
     op.create_table('users',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -83,6 +88,13 @@ def upgrade():
     sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
     sa.PrimaryKeyConstraint('restaurant_id', 'cuisine_id')
     )
+    op.create_table('restaurant_tags',
+    sa.Column('restaurant_id', sa.Integer(), nullable=False),
+    sa.Column('tag_id', sa.Integer(), nullable=False),
+    sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
+    sa.ForeignKeyConstraint(['tag_id'], ['tags.id'], ),
+    sa.PrimaryKeyConstraint('restaurant_id', 'tag_id')
+    )
     op.create_table('cart_items',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('quantity', sa.Integer(), nullable=False),
@@ -116,12 +128,14 @@ def downgrade():
     op.drop_table('order_items')
     op.drop_table('menu_items')
     op.drop_table('cart_items')
+    op.drop_table('restaurant_tags')
     op.drop_table('restaurant_cuisines')
     op.drop_table('orders')
     op.drop_table('menus')
     op.drop_table('items')
     op.drop_table('carts')
     op.drop_table('users')
+    op.drop_table('tags')
     op.drop_table('restaurants')
     op.drop_table('cuisines')
     # ### end Alembic commands ###

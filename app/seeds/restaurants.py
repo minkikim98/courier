@@ -1,4 +1,4 @@
-from app.models import db, Restaurant, Cuisine
+from app.models import db, Restaurant, Cuisine, Tag
 
 
 def seed_restaurants():
@@ -16,12 +16,20 @@ def seed_restaurants():
     italian = Cuisine.query.get(11)
     pizza = Cuisine.query.get(12)
 
+    popular = Tag.query.get(1)
+    national_favorites = Tag.query.get(2)
+    lunch = Tag.query.get(3)
+    culture = Tag.query.get(4)
+
     # 1
     panda = Restaurant(name='Panda Express', address='5150 Cherry Ave, San Jose, CA 95118', 
         description="Fast-food chain for Chinese standards, including some health-conscious options.",
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/42492.jpg")
     panda.cuisines.append(chinese)
     panda.cuisines.append(asian)
+    panda.tags.append(culture)
+    panda.tags.append(national_favorites)
+    panda.tags.append(popular)
     db.session.add(panda)
 
     #2
@@ -30,7 +38,9 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/5579.png")
     mcd.cuisines.append(fast)
     mcd.cuisines.append(burgers)
-    # mcd.cuisines.append(desserts)
+    mcd.tags.append(national_favorites)
+    mcd.tags.append(lunch)
+    mcd.tags.append(popular)
     db.session.add(mcd)
 
     #3
@@ -40,6 +50,7 @@ def seed_restaurants():
     poki.cuisines.append(healthy)
     poki.cuisines.append(asian)
     poki.cuisines.append(japanese)
+    poki.tags.append(culture)
     db.session.add(poki)
 
     #4
@@ -48,6 +59,7 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/193224.jpg")
     tony.cuisines.append(pizza)
     tony.cuisines.append(italian)
+    tony.tags.append(culture)
     db.session.add(tony)
 
     #5
@@ -56,6 +68,7 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/1e869531-be3a-4c1a-a4c1-271e81113b1e.jpg")
     kfc.cuisines.append(chicken)
     kfc.cuisines.append(fast)
+    kfc.tags.append(national_favorites)
     db.session.add(kfc)
 
     #6
@@ -71,6 +84,8 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/43726.jpg")
     smash.cuisines.append(burgers)
     smash.cuisines.append(fast)
+    smash.tags.append(national_favorites)
+    smash.tags.append(lunch)
     db.session.add(smash)
 
     #8
@@ -79,6 +94,9 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/3720.jpg")
     subway.cuisines.append(fast)
     subway.cuisines.append(healthy)
+    subway.tags.append(popular)
+    subway.tags.append(lunch)
+    subway.tags.append(national_favorites)
     db.session.add(subway)
 
     #9
@@ -87,6 +105,7 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/9d75fc4f-44b7-485e-82df-4204916745af.JPG")
     hinodeya.cuisines.append(asian)
     hinodeya.cuisines.append(japanese)
+    hinodeya.tags.append(culture)
     db.session.add(hinodeya)
 
     #10
@@ -95,6 +114,7 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/21157.jpg")
     lers.cuisines.append(thai)
     lers.cuisines.append(asian)
+    lers.tags.append(culture)
     db.session.add(lers)
 
     #11
@@ -103,6 +123,9 @@ def seed_restaurants():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store/header/8b48c653-0eca-40bb-8e47-6fd4ac0f75b5.jpg")
     chipotle.cuisines.append(mexican)
     chipotle.cuisines.append(healthy)
+    chipotle.tags.append(lunch)
+    chipotle.tags.append(national_favorites)
+    chipotle.tags.append(popular)
     db.session.add(chipotle)
 
     db.session.commit()

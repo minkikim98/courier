@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { getCuisines } from "../../store/cuisine"
+import { getCuisines } from "../../../store/cuisine"
 
 // import desserts from "../../images/cuisines/desserts.png"
 import "./Categories.css"

@@ -18,4 +18,10 @@
     font-weight: 600;
     color: rgb(0, 191, 155);
     font-family: 'Montserrat', sans-serif;
+
+    cursor: pointer;
+}
+
+#close-address-form i {
+    cursor: pointer;
 }

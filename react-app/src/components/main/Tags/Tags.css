@@ -1,4 +1,4 @@
-.popular-container {
+.tag-container {
     display: flex;
     justify-content: space-between;
     /* font-size: 30px; */
@@ -7,13 +7,13 @@
     /* border: 1px solid blue; */
 }
 
-.popular__left {
+.tag__left {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
 }
 
-.popular__view-all {
+.tag__view-all {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,17 +28,17 @@
     color: white;
 }
 
-.popular__view-all i {
+.tag__view-all i {
     margin-left: 10px;
 }
 
-.popular__label {
+.tag__label {
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
-.popular__restaurants {
+.tagged__restaurants {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,7 +49,7 @@
     /* border: 1px solid blue; */
 }
 
-.popular__restaurant {
+.tagged__restaurant {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -60,22 +60,27 @@
     font-family: 'Open Sans', sans-serif;
 
     padding: 10px;
+    border-radius: 5px;
     /* border: 1px solid black; */
     /* max-height: 300px; */
     /* font-family: 'Montserrat', sans-serif; */
 }
 
-.popular__name {
+.tagged__restaurant:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.tagged-restaurant__name {
     font-size: 14px;
 }
 
-.popular__address {
+.tagged-restaurant__address {
     font-size: 12px;
     font-style: italic;
 }
 
 
-.popular__restaurant img {
+.tagged__restaurant img {
     width: 250px;
     height: 150px;
     border-radius: 20px;
