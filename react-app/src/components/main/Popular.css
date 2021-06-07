@@ -79,4 +79,5 @@
     width: 250px;
     height: 150px;
     border-radius: 20px;
+    object-fit: cover;
 }
