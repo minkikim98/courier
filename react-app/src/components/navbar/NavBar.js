@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector, useStore } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import EditDateTimeButton from './datetime/EditDateTimeButton';
 import SidebarMenuButton from './menu/SidebarMenuButton';

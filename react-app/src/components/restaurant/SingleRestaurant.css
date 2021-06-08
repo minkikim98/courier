@@ -5,7 +5,7 @@
 .restaurant-banner {
     max-height: 300px;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -76,6 +76,7 @@
 
 .item-info button {
     border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
     width: 25px;
     height: 25px;
     margin-top: 10px;

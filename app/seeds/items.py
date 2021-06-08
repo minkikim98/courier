@@ -32,6 +32,45 @@ def seed_items():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/905b2a5c-bf3a-414c-b0e7-f541dc781bcf-retina-large-jpeg")
     db.session.add(item7)
 
+    item8 = Item(name="The Original Orange Chicken", price=12.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/79213bf5-59f5-48a3-8eed-e91ffaf3a81a-retina-large-jpeg")
+    db.session.add(item8)
+
+    item9 = Item(name="Grilled Teriyaki Chicken", price=12.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/07c22acc-3036-4030-b003-0000e3e0f53c-retina-large-jpeg")
+    db.session.add(item9)
+
+    item10 = Item(name="Honey Walnut Shrimp", price=12.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/a3b14174-a398-4aec-8b76-55124467324e-retina-large.jpg")
+    db.session.add(item10)
+
+    # Appetizers
+    item11 = Item(name="Chicken Egg Roll", price=6.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/49d374aa-1718-4741-8ccd-afb8095a45cd-retina-large-jpeg")
+    db.session.add(item11)
+
+    item12 = Item(name="Veggie Spring Roll", price=5.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/896291aa-ee01-42dd-b8b4-aae584d96ca8-retina-large-jpeg")
+    db.session.add(item12)
+
+    # Drinks
+    item13 = Item(name="Coca Cola", price=3.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/7fd1126b-54e9-4a69-8a7f-a08b8cc50e64-retina-large-jpeg")
+    db.session.add(item13)
+
+    item14 = Item(name="Diet Coke", price=3.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/4a3dd119-acf6-4d02-bb49-c858d920cee2-retina-large-jpeg")
+    db.session.add(item14)
+
+    item15 = Item(name="Sprite", price=3.50, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/aa366484-f518-4edc-a281-7699e0a08043-retina-large-jpeg")
+    db.session.add(item15)
+
+    item16 = Item(name="Diet Coke", description="16oz Bottle", price=3.00, restaurant_id=1,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/4174683f-112d-40da-97af-7c54df019999-retina-large-jpeg")
+    db.session.add(item16)
+
+
     db.session.commit()
 
 

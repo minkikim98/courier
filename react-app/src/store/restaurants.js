@@ -3,9 +3,7 @@ const SET_RESTAURANT = "restaurants/SET_RESTAURANT";
 
 const setRestaurants = (restaurantsInfo) => ({
     type: SET_RESTAURANTS,
-    restaurants: restaurantsInfo.restaurants,
-    cuisine_filter_id: restaurantsInfo.cuisine_filter_id,
-    tag_filter_id: restaurantsInfo.tag_filter_id
+    restaurants: restaurantsInfo.restaurants
 })
 
 const setRestaurant = (restaurantInfo) => ({
@@ -23,25 +21,25 @@ export const getAllRestaurants = () => async (dispatch) => {
     dispatch(setRestaurants(data));
 }
 
-export const getFilteredRestaurants = (cuisineId) => async (dispatch) => {
-    const response = await fetch(`/api/restaurants/cuisines/${cuisineId}`, {
-        headers: {
-            "Content-Type": "application/json",
-        }
-    });
-    const data = await response.json();
-    dispatch(setRestaurants(data));
-}
+// export const getFilteredRestaurants = (cuisineId) => async (dispatch) => {
+//     const response = await fetch(`/api/restaurants/cuisines/${cuisineId}`, {
+//         headers: {
+//             "Content-Type": "application/json",
+//         }
+//     });
+//     const data = await response.json();
+//     dispatch(setRestaurants(data));
+// }
 
-export const getTaggedRestaurants = (tagId) => async (dispatch) => {
-    const response = await fetch(`/api/restaurants/tags/${tagId}`, {
-        headers: {
-            "Content-Type": "application/json",
-        }
-    });
-    const data = await response.json();
-    dispatch(setRestaurants(data));
-}
+// export const getTaggedRestaurants = (tagId) => async (dispatch) => {
+//     const response = await fetch(`/api/restaurants/tags/${tagId}`, {
+//         headers: {
+//             "Content-Type": "application/json",
+//         }
+//     });
+//     const data = await response.json();
+//     dispatch(setRestaurants(data));
+// }
 
 export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
     const response = await fetch(`/api/restaurants/${restaurantId}`, {
@@ -53,7 +51,7 @@ export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
     dispatch(setRestaurant(data));
 }
 
-const initialState = { restaurants: {}, restaurant: {}, cuisine_filter_id: 0, tag_filter_id: 0 };
+const initialState = { restaurants: {}, restaurant: {}};
 
 export default function reducer(state = initialState, action) {
     const copyState = { ...state }

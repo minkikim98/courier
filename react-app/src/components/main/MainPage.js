@@ -14,15 +14,13 @@ const MainPage = () => {
     const dispatch = useDispatch();
 
     const allRestaurants = useSelector(state => state.restaurants.restaurants) || {};
-    const cuisine_filter_id = useSelector(state => state.restaurants.cuisine_filter_id);
-    const tag_filter_id = useSelector(state => state.restaurants.tag_filter_id);
 
     const getAllRestaurantsToDisplay = async (e) => {
         await dispatch(getAllRestaurants());
     };
 
     const allRestaurantsLoaded = () => {
-        return Object.keys(allRestaurants).length && cuisine_filter_id === 0 && tag_filter_id === 0;
+        return Object.keys(allRestaurants).length;
     }
 
     useEffect(() => {

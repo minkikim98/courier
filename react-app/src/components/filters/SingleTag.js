@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 
-import { getTaggedRestaurants } from "../../store/restaurants";
+import { getAllRestaurants } from "../../store/restaurants"
+
 
 import NavBar from '../navbar/NavBar';
 import Categories from '../main/Categories/Categories';
@@ -13,24 +14,47 @@ const SingleTag = () => {
     const tagId = useParams().tagId;
     const dispatch = useDispatch();
 
-    const restaurantsToDisplay = useSelector(state => state.restaurants.restaurants) || {};
-    const tag_filter_id = useSelector(state => state.restaurants.tag_filter_id);
+    const allRestaurants = useSelector(state => state.restaurants.restaurants) || {};
+    const taggedRestaurants = Object.values(allRestaurants).filter((restaurant) => restaurant.tags.some(tag => tag.tag_id.toString() === tagId));
 
-    const getTaggedRestaurantsToDisplay = async (e) => {
-        await dispatch(getTaggedRestaurants(tagId));
+    const getAllRestaurantsToDisplay = async (e) => {
+        await dispatch(getAllRestaurants());
     };
 
+    const allRestaurantsLoaded = () => {
+        return Object.keys(allRestaurants).length;
+    }
+
     useEffect(() => {
-        if (tag_filter_id !== tagId) getTaggedRestaurantsToDisplay();
+        if (!allRestaurantsLoaded()) getAllRestaurantsToDisplay();
     });
+
+    let tagTitleText = "";
+    switch(tagId) {
+        case "1":
+            tagTitleText = "Popular";
+            break;
+        case "2":
+            tagTitleText = "National Favorites";
+            break;
+        case "3":
+            tagTitleText = "Great for Lunch";
+            break;
+        case "4":
+            tagTitleText = "Cultural Cuisine";
+            break;
+        default:
+            break;
+    }
 
     return (
         <div>
             <NavBar />
             <div className="main-body">
                 <Categories />
+                <div className="filter-title">{tagTitleText}</div>
                 <div className="filter-container">
-                    {tag_filter_id === tagId && Object.values(restaurantsToDisplay).map(restaurant => (
+                    {allRestaurantsLoaded() && Object.values(taggedRestaurants).map(restaurant => (
                         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="filter-restaurant">
                             <img src={restaurant.image_url} alt={restaurant.name}></img>
                             <div className="filter-restaurant__name">{restaurant.name}</div>

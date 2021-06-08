@@ -1,3 +1,9 @@
+.filter-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    padding: 10px;
+}
+
 .filter-container {
     display: flex;
     flex-wrap: wrap;
