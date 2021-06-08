@@ -30,14 +30,6 @@ const Popular = () => {
                     <RestaurantLink restaurant={popularRestaurants[3]} column="bottom"/>
                     <RestaurantLink restaurant={popularRestaurants[4]} column="bottom"/>
                 </div>
-                
-                {/* {allRestaurants && popularRestaurants.map(restaurant => (
-                    <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="tagged-restaurant">
-                        <img src={restaurant.image_url} alt={restaurant.name}></img>
-                        <div className="tagged-restaurant__name">{restaurant.name}</div>
-                        <div className="tagged-restaurant__address">{restaurant.address}</div>
-                    </Link>
-                ))} */}
             </div>}
         </div>
     )

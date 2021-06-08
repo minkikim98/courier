@@ -36,8 +36,8 @@ const SingleCuisine = () => {
                     {cuisine_filter_id === cuisineId && Object.values(restaurantsToDisplay).map(restaurant => (
                         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="cuisine-restaurant">
                             <img src={restaurant.image_url} alt={restaurant.name}></img>
-                            <div>{restaurant.name}</div>
-                            <div>{restaurant.address}</div>
+                            <div className="cuisine-restaurant__name">{restaurant.name}</div>
+                            <div className="cuisine-restaurant__address">{restaurant.address}</div>
                         </Link>
                     ))}
                 </div>

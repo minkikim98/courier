@@ -7,7 +7,7 @@ const RestaurantLink = ({ restaurant, column }) => {
         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className={`tagged-restaurant__${column}`}>
             <img src={restaurant.image_url} alt={restaurant.name}></img>
             <div className="tagged-restaurant__name">{restaurant.name}</div>
-            <div className="tagged-restaurant__address">{restaurant.address}</div>
+            <div className="tagged-restaurant__description">{restaurant.description}</div>
         </Link>
     );
 }

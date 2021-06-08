@@ -30,6 +30,7 @@ def seed_restaurants():
     panda.tags.append(culture)
     panda.tags.append(national_favorites)
     panda.tags.append(popular)
+    panda.tags.append(lunch)
     db.session.add(panda)
 
     #2

@@ -1,12 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+
+import RestaurantLink from "./RestaurantLink";
 
 import "./Tags.css"
 
 const NationalFavorites = () => {
     const allRestaurants = useSelector(state => state.restaurants.restaurants) || {};
     const nationalFavoriteRestaurants = Object.values(allRestaurants).filter((restaurant) => restaurant.tags.some(tag => tag.tag_name === "National Favorites"));
+
+    const cuisine_filter_id = useSelector(state => state.restaurants.cuisine_filter_id);
 
     return (
         <div className="tag-container">
@@ -17,15 +20,17 @@ const NationalFavorites = () => {
                     <i className="fas fa-arrow-right"></i>
                 </div>
             </div>
-            <div className="tagged__restaurants">
-                {allRestaurants && nationalFavoriteRestaurants.map(restaurant => (
-                    <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="tagged__restaurant">
-                        <img src={restaurant.image_url} alt={restaurant.name}></img>
-                        <div className="tagged-restaurant__name">{restaurant.name}</div>
-                        <div className="tagged-restaurant__address">{restaurant.address}</div>
-                    </Link>
-                ))}
-            </div>
+            {(nationalFavoriteRestaurants.length && cuisine_filter_id === 0) && <div className="tagged-restaurants">
+                <div className="tagged-restaurants__top">
+                    <RestaurantLink restaurant={nationalFavoriteRestaurants[2]} column="top" />
+                    <RestaurantLink restaurant={nationalFavoriteRestaurants[3]} column="top" />
+                </div>
+                <div className="tagged-restaurants__bottom">
+                    <RestaurantLink restaurant={nationalFavoriteRestaurants[1]} column="bottom" />
+                    <RestaurantLink restaurant={nationalFavoriteRestaurants[0]} column="bottom" />
+                    <RestaurantLink restaurant={nationalFavoriteRestaurants[4]} column="bottom" />
+                </div>
+            </div>}
         </div>
     )
 }

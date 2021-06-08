@@ -3,6 +3,7 @@
     justify-content: space-between;
     /* font-size: 30px; */
     padding: 10px;
+    margin-bottom: 20px;
 
     /* border: 1px solid blue; */
 }
@@ -52,7 +53,6 @@
     justify-content: space-between;
 
     width: 100%;
-    height: 200px;
 }
 
 .tagged-restaurants__bottom {
@@ -87,13 +87,22 @@
 
 
 .tagged-restaurant__name {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
 }
 
-.tagged-restaurant__address {
+.tagged-restaurant__description {
     font-size: 12px;
     font-style: italic;
+
+    width: 100%;
+    /* height: 10px; */
+
+    /* width: 200px;
+    height: 40px; */
+    /* white-space: nowrap; */
+    /* overflow: ; */
+    /* text-overflow: ellipsis; */
 }
 
 

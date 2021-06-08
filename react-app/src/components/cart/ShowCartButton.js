@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { showCart, hideCart } from '../../store/cart';
+
 import Cart from "./Cart"
 
 const ShowCartButton = () => {
-    const [showCart, setShowCart] = useState(false);
+    const dispatch = useDispatch();
+    const cartVisible = useSelector(state => state.cart.showCart)
 
     const openCart = () => {
-        if (showCart) return;
-        setShowCart(true);
-    };
+        if (cartVisible) return;
+        dispatch(showCart());
+    }
+
+    const closeCart = () => {
+        if (!cartVisible) return;
+        dispatch(hideCart());
+    }
 
     useEffect(() => {
-        if (!showCart) return;
-
-        const closeCart = () => {
-            setShowCart(false);
-        };
-
-        // document.addEventListener('submit', closeEditDateTime);
+        if (!cartVisible) return;
         document.getElementById("close-cart").addEventListener('click', closeCart);
-    }, [showCart]);
+    })
 
     return (
         <>
@@ -26,7 +29,7 @@ const ShowCartButton = () => {
                 onClick={openCart}>
                 <i className="fas fa-shopping-cart"></i>
             </button>
-            {showCart && <Cart />}
+            {cartVisible && <Cart />}
         </>
     )
 }

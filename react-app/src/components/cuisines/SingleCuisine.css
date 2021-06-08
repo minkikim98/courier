@@ -1,17 +1,45 @@
-.cuisine_container {
+.cuisine-container {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /* border: 1px solid blue; */
 }
 
 .cuisine-restaurant {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
 
-    border: 1px solid blue;
+    width: 300px;
+    padding: 10px;
+
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .cuisine-restaurant img {
     width: 300px;
     height: 150px;
 
+    border-radius: 5px;
+
     object-fit: cover;
+}
+
+.cuisine-restaurant img:hover {
+    box-shadow: 0px 0px 10px 4px rgb(220, 220, 220);
+}
+
+.cuisine-restaurant__name {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.cuisine-restaurant__address {
+    font-size: 12px;
+    font-style: italic;
 }

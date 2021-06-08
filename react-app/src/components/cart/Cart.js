@@ -8,7 +8,7 @@ import "./Cart.css"
 
 const Cart = () => {
     const dispatch = useDispatch();
-    const cartInfo = useSelector(state => state.cart);
+    const cartInfo = useSelector(state => state.cart.cart);
     const user = useSelector(state => state.session.user);
     // const [errors, setErrors] = useState([]);
 

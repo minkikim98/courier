@@ -7,6 +7,7 @@ import Categories from "./Categories/Categories";
 import Popular from "./Tags/Popular";
 import NationalFavorites from "./Tags/NationalFavorites";
 import Cultural from "./Tags/Cultural";
+import Lunch from "./Tags/Lunch";
 // import Footer from "../footer/Footer"
 
 const MainPage = () => {
@@ -31,8 +32,9 @@ const MainPage = () => {
             <div className="main-body">
                 <Categories />
                 <Popular />
-                {/* <NationalFavorites />
-                <Cultural /> */}
+                <NationalFavorites />
+                <Cultural />
+                <Lunch />
             </div>
             {/* <Footer /> */}
         </div>

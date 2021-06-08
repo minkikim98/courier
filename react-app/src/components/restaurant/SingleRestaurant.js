@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import { getSingleRestaurant } from "../../store/restaurants";
-import { addToCart } from "../../store/cart";
+import { addToCart, showCart } from "../../store/cart";
 import NavBar from "../navbar/NavBar"
 
 import "./SingleRestaurant.css"
@@ -22,6 +22,7 @@ const SingleRestaurant = () => {
     });
 
     const addToCartCB = async (itemId) => {
+        dispatch(showCart());
         await dispatch(addToCart(itemId));
     }    
 

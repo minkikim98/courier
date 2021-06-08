@@ -1,8 +1,23 @@
 const SET_CART = "cart/SET_CART";
+const CLEAR_CART = "cart/CLEAR_CART";
+const SHOW_CART = "cart/SHOW_CART";
+const HIDE_CART = "cart/HIDE_CART";
 
 const setCart = (cartData) => ({
     type: SET_CART,
     payload: cartData
+})
+
+export const clearCart = () => ({
+    type: CLEAR_CART,
+})
+
+export const hideCart = () => ({
+    type: HIDE_CART
+})
+
+export const showCart = () => ({
+    type: SHOW_CART
 })
 
 export const getCart = () => async (dispatch) => {
@@ -46,17 +61,28 @@ export const removeFromCart = (itemId) => async (dispatch) => {
     return data;
 }
 
-export const clearCart = () => (dispatch) => {
-    dispatch(setCart({}));
-    return {};
-}
+// export const clearCart = () => (dispatch) => {
+//     dispatch(clearCart({}));
+//     return {};
+// }
 
-const initialState = {};
+const initialState = {cart: {}, showCart: false};
 
 export default function reducer(state = initialState, action) {
+    const copyState = Object.assign({}, state);
     switch (action.type) {
         case SET_CART:
-            return action.payload;
+            copyState.cart = action.payload;
+            return copyState;
+        case CLEAR_CART:
+            return initialState;
+        case SHOW_CART:
+            console.log("show cart")
+            copyState.showCart = true;
+            return copyState;
+        case HIDE_CART:
+            copyState.showCart = false;
+            return copyState;
         default:
             return state;
     }
