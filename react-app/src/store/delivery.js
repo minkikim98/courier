@@ -22,24 +22,32 @@ export const setAddress = (addressString) => ({
 
 const now = new Date();
 // 825 Battery St, San Francisco, CA 94111
-const initialState = { address: "825 Battery St", dateTime: now };
+const initialState = { address: "825 Battery St", 
+    dateTime: { 
+        object: now, 
+        dateString: `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`, 
+        timeString: now.toLocaleTimeString("en-US").slice(0, -6).concat(now.toLocaleTimeString("en-US").slice(-3))
+    } 
+};
 
 export default function reducer(state = initialState, action) {
-    const copyState = { ...state }
+    const copyState = Object.assign({}, state);
+    const obj = copyState.dateTime.object;
+
     switch (action.type) {
         case SET_ADDRESS:
             copyState.address = action.address;
             return copyState;
         case SET_TIME:
-            copyState.dateTime.setMinutes(parseInt(action.minute));
-            copyState.dateTime.setHours(parseInt(action.hour));
+            obj.setMinutes(parseInt(action.minute));
+            obj.setHours(parseInt(action.hour));
+            copyState.dateTime.dateString = `${obj.getMonth() + 1}/${obj.getDate()}/${obj.getFullYear()}`;
             return copyState;
         case SET_DATE:
-            // console.log(parseInt(action.year))
-            copyState.dateTime.setFullYear(parseInt(action.year));
-            copyState.dateTime.setMonth(parseInt(action.month) - 1);
-            copyState.dateTime.setDate(parseInt(action.day));
-            // console.log(copyState)
+            obj.setFullYear(parseInt(action.year));
+            obj.setMonth(parseInt(action.month) - 1);
+            obj.setDate(parseInt(action.day));
+            copyState.dateTime.timeString = now.toLocaleTimeString("en-US").slice(0, -6).concat(now.toLocaleTimeString("en-US").slice(-3));
             return copyState;
         default:
             return state;

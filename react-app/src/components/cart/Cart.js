@@ -28,9 +28,9 @@ const Cart = () => {
     let cartContent;
 
     if (user) {
-        if (cartInfo.cartItems && cartInfo.cart_items.length) {
+        if (cartInfo.cart_items && cartInfo.cart_items.length === 0) {
             cartContent = (
-                <div>Welcome, {user.username}! You currently do not have items in your cart.</div>
+                <div className="cart-welcome">Welcome, {user.username}! You currently do not have items in your cart.</div>
             )
         } else {
             cartContent = (

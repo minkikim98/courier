@@ -38,6 +38,8 @@
     font-size: 16px;
     text-decoration: none;
     color: rgb(0, 191, 155);
+
+    cursor: pointer;
     /* border: 1px solid red; */
 
 }

@@ -28,7 +28,7 @@ const EditDateTimeButton = () => {
         <>
             <button id="edit-date-time-button"
                 onClick={openEditDateTime}>
-                {deliveryDateTimeInfo.toDateString() + ", " + deliveryDateTimeInfo.toLocaleTimeString("en-US").slice(0, -6) + deliveryDateTimeInfo.toLocaleTimeString("en-US").slice(-3)}
+                {deliveryDateTimeInfo.dateString.concat(" ", deliveryDateTimeInfo.timeString)}
             </button>
             {showEditDateTime && <EditDateTime />}
         </>

@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 180px 1fr;
     grid-template-areas: "navbar-left navbar-center navbar-right";
-    /* justify-content: space-between; */
     position: fixed;
     top: 0px;
     left: 0px;
@@ -10,38 +9,33 @@
 
     background-color: white;
 
-    /* border: 1px solid blue; */
     border-bottom: 1px solid rgb(203, 203, 203);
 }
 
 .navbar-left {
     display: flex;
-    /* padding: 10px; */
     align-items: center;
-
-    /* margin-right: auto; */
-    /* border: 1px solid green; */
 
     grid-area: navbar-left;
 }
 
 
 .navbar-center {
-    /* padding: 10px; */
     display: flex;
     align-items: center;
-    /* margin-right: 15%; */
     
-    /* border: 1px solid blue; */
     grid-area: navbar-center;
 }
 
-.navbar-center img {
+.navbar-center-item img {
     height: 40px;
-    /* border: 1px solid red; */
+    margin-right: 5px;
 }
 
 .navbar-center-item {
+    display: flex;
+    align-items: center;
+
     color: rgb(0, 191, 155);
     text-decoration: none;
     font-size: 20px;
@@ -55,11 +49,13 @@
     justify-content: flex-end;
     align-items: center;
 
-    /* border: 1px solid red; */
-    /* padding: 10px; */
-    
-    /* margin-left: auto; */
     grid-area: navbar-right;
+}
+
+.navbar-welcome {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 191, 155);
+    margin-right: 20px;
 }
 
 .navbar-right input {

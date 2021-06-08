@@ -8,7 +8,6 @@ const LogoutButton = () => {
   const onLogout = async (e) => {
     await dispatch(logout());
     await dispatch(clearCart());
-    alert("You have successfully logged out.");
   };
 
   return <button onClick={onLogout} className="sidebar-menu-option">Logout</button>;
