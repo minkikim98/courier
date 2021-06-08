@@ -9,8 +9,9 @@ import UsersList from "./components/UsersList";
 import User from "./components/User";
 import MainPage from "./components/main/MainPage";
 import IntroPage from "./components/Intro/IntroPage";
-import SingleCuisine from "./components/cuisines/SingleCuisine";
+import SingleCuisine from "./components/filters/SingleCuisine";
 import SingleRestaurant from "./components/restaurant/SingleRestaurant";
+import SingleTag from "./components/filters/SingleTag";
 // import { authenticate } from "./services/auth";
 import { authenticate } from "./store/session";
 
@@ -32,7 +33,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <NavBar /> */}
       <Switch>
         <Route path="/login" exact={true}>
           <LoginForm />
@@ -57,6 +57,9 @@ function App() {
         </Route>
         <Route path="/restaurants/:restaurantId" exact={true} >
           <SingleRestaurant />
+        </Route>
+        <Route path="/tags/:tagId" exact={true} >
+          <SingleTag />
         </Route>
       </Switch>
     </BrowserRouter>

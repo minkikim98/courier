@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import RestaurantLink from "./RestaurantLink";
@@ -10,17 +11,18 @@ const Popular = () => {
     const popularRestaurants = Object.values(allRestaurants).filter((restaurant) => restaurant.tags.some(tag => tag.tag_name === "Popular"));
 
     const cuisine_filter_id = useSelector(state => state.restaurants.cuisine_filter_id);
+    const tag_filter_id = useSelector(state => state.restaurants.tag_filter_id);
 
     return (
         <div className="tag-container">
             <div className="tag__left">
                 <div className="tag__label">Popular Restaurants in SF</div>
-                <div className="tag__view-all">
+                <Link to="/tags/1" className="tag__view-all">
                     <div>See All</div>
                     <i className="fas fa-arrow-right"></i>
-                </div>
+                </Link>
             </div>
-            {(popularRestaurants.length && cuisine_filter_id === 0) && <div className="tagged-restaurants">
+            {(popularRestaurants.length && cuisine_filter_id === 0 && tag_filter_id === 0) && <div className="tagged-restaurants">
                 <div className="tagged-restaurants__top">
                     <RestaurantLink restaurant={popularRestaurants[0]} column="top"/>
                     <RestaurantLink restaurant={popularRestaurants[1]} column="top"/>

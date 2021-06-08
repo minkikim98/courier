@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import RestaurantLink from "./RestaurantLink";
@@ -15,10 +16,10 @@ const Lunch = () => {
         <div className="tag-container">
             <div className="tag__left">
                 <div className="tag__label">Great for Lunch</div>
-                <div className="tag__view-all">
+                <Link to="/tags/3" className="tag__view-all">
                     <div>See All</div>
                     <i className="fas fa-arrow-right"></i>
-                </div>
+                </Link>
             </div>
             {(lunchRestaurants.length && cuisine_filter_id === 0) && <div className="tagged-restaurants">
                 <div className="tagged-restaurants__top">

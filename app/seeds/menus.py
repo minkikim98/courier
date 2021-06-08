@@ -6,8 +6,9 @@ def seed_menus():
     panda = Restaurant.query.filter().first()
     panda_items = Item.query.filter(Item.restaurant_id == panda.id).all()
 
-    popular = Menu(name='Popular Items', restaurant_id=1)
-    alc = Menu(name='A La Carte', restaurant_id=1)
+    popular = Menu(name='Popular Items', restaurant_id=1, description="The most commonly ordered items and dishes from this store.")
+    alc = Menu(name='A La Carte', restaurant_id=1, description="Individual Entrees & Sides.")
+
     for item in panda_items:
         if item.id < 6: popular.menu_items.append(item)
         else: alc.menu_items.append(item)

@@ -9,7 +9,7 @@ class Restaurant(db.Model):
     name = db.Column(db.String(50), nullable=False)
     address = db.Column(db.String(50), nullable=False, unique=True)
     description = db.Column(db.String(300), nullable=False)
-    image_url = db.Column(db.String(300), nullable=False)
+    image_url = db.Column(db.String(2048), nullable=False)
 
     cuisines = db.relationship("Cuisine", back_populates="restaurants", secondary=restaurant_cuisines)
     tags = db.relationship("Tag", back_populates="restaurants", secondary=restaurant_tags)

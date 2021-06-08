@@ -15,26 +15,31 @@ const MainPage = () => {
 
     const allRestaurants = useSelector(state => state.restaurants.restaurants) || {};
     const cuisine_filter_id = useSelector(state => state.restaurants.cuisine_filter_id);
+    const tag_filter_id = useSelector(state => state.restaurants.tag_filter_id);
 
     const getAllRestaurantsToDisplay = async (e) => {
         await dispatch(getAllRestaurants());
     };
 
-    // getAllRestaurants()
+    const allRestaurantsLoaded = () => {
+        return Object.keys(allRestaurants).length && cuisine_filter_id === 0 && tag_filter_id === 0;
+    }
 
     useEffect(() => {
-        if (!Object.keys(allRestaurants).length || cuisine_filter_id !== 0) getAllRestaurantsToDisplay();
+        if (!allRestaurantsLoaded()) getAllRestaurantsToDisplay();
     });
 
     return (
         <div>
             <NavBar />
             <div className="main-body">
-                <Categories />
-                <Popular />
-                <NationalFavorites />
-                <Cultural />
-                <Lunch />
+                {allRestaurantsLoaded() && <div>
+                    <Categories />
+                    <Popular />
+                    <NationalFavorites />
+                    <Lunch />
+                    <Cultural />
+                </div>}
             </div>
             {/* <Footer /> */}
         </div>

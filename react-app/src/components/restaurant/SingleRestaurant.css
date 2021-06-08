@@ -36,10 +36,29 @@
 }
 
 .restaurant__menu-item {
+    display: flex;
+    justify-content: space-between;
+
+    width: 440px;
+
     padding: 10px;
-    border: 1px solid rgb(0, 191, 155);
-    border-radius: 10px;
     margin: 10px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
+}
+
+.restaurant__menu-item:hover {
+    border: 1px solid rgb(167, 166, 166);
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restaurant__menu-item img {
+    width: 30%;
 }
 
 .item__name {
@@ -48,5 +67,21 @@
 }
 
 .item__description {
-    font-size: 15px;
+    font-size: 12px;
+}
+
+.item__price {
+    font-size: 14px;
+}
+
+.item-info button {
+    border: 1px solid rgb(203, 203, 203);
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.item-info button:hover {
+    border: 1px solid rgb(167, 166, 166);
 }

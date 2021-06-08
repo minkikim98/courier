@@ -4,7 +4,8 @@ const SET_RESTAURANT = "restaurants/SET_RESTAURANT";
 const setRestaurants = (restaurantsInfo) => ({
     type: SET_RESTAURANTS,
     restaurants: restaurantsInfo.restaurants,
-    cuisine_filter_id: restaurantsInfo.cuisine_filter_id
+    cuisine_filter_id: restaurantsInfo.cuisine_filter_id,
+    tag_filter_id: restaurantsInfo.tag_filter_id
 })
 
 const setRestaurant = (restaurantInfo) => ({
@@ -32,6 +33,16 @@ export const getFilteredRestaurants = (cuisineId) => async (dispatch) => {
     dispatch(setRestaurants(data));
 }
 
+export const getTaggedRestaurants = (tagId) => async (dispatch) => {
+    const response = await fetch(`/api/restaurants/tags/${tagId}`, {
+        headers: {
+            "Content-Type": "application/json",
+        }
+    });
+    const data = await response.json();
+    dispatch(setRestaurants(data));
+}
+
 export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
     const response = await fetch(`/api/restaurants/${restaurantId}`, {
         headers: {
@@ -42,7 +53,7 @@ export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
     dispatch(setRestaurant(data));
 }
 
-const initialState = { restaurants: {}, restaurant: {}, cuisine_filter_id: 0 };
+const initialState = { restaurants: {}, restaurant: {}, cuisine_filter_id: 0, tag_filter_id: 0 };
 
 export default function reducer(state = initialState, action) {
     const copyState = { ...state }
@@ -50,6 +61,7 @@ export default function reducer(state = initialState, action) {
         case SET_RESTAURANTS:
             copyState.restaurants = action.restaurants;
             copyState.cuisine_filter_id = action.cuisine_filter_id;
+            copyState.tag_filter_id = action.tag_filter_id;
             return copyState;
         case SET_RESTAURANT:
             copyState.restaurant = action.restaurant;

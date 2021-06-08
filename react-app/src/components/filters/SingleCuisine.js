@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { useParams, Link } from "react-router-dom";
 
 import { getFilteredRestaurants } from "../../store/restaurants";
 
 import NavBar from "../navbar/NavBar";
 import Categories from "../main/Categories/Categories";
 
-import "./SingleCuisine.css"
+import "./Filter.css"
 
 const SingleCuisine = () => {
     const cuisineId = useParams().cuisineId;
@@ -32,12 +31,12 @@ const SingleCuisine = () => {
             <NavBar />
             <div className="main-body">
                 <Categories />
-                <div className="cuisine-container">
+                <div className="filter-container">
                     {cuisine_filter_id === cuisineId && Object.values(restaurantsToDisplay).map(restaurant => (
-                        <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="cuisine-restaurant">
+                        <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="filter-restaurant">
                             <img src={restaurant.image_url} alt={restaurant.name}></img>
-                            <div className="cuisine-restaurant__name">{restaurant.name}</div>
-                            <div className="cuisine-restaurant__address">{restaurant.address}</div>
+                            <div className="filter-restaurant__name">{restaurant.name}</div>
+                            <div className="filter-restaurant__address">{restaurant.address}</div>
                         </Link>
                     ))}
                 </div>

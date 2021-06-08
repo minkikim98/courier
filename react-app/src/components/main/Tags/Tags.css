@@ -24,13 +24,20 @@
     padding: 10px;
     margin-top: 30px;
 
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgb(0, 191, 155);
+    
+    text-decoration: none;
     color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 .tag__view-all i {
     margin-left: 10px;
+}
+
+.tag__view-all:hover {
+    background-color: rgb(0, 182, 149);
 }
 
 .tag__label {
