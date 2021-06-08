@@ -22,6 +22,7 @@ const SingleCuisine = () => {
         await dispatch(getFilteredRestaurants(cuisineId));
     };
 
+
     useEffect(() => {
         if (cuisine_filter_id !== cuisineId) getFilteredRestaurantsToDisplay();
     });
@@ -32,7 +33,7 @@ const SingleCuisine = () => {
             <div className="main-body">
                 <Categories />
                 <div className="cuisine-container">
-                    {restaurantsToDisplay && Object.values(restaurantsToDisplay).map(restaurant => (
+                    {cuisine_filter_id === cuisineId && Object.values(restaurantsToDisplay).map(restaurant => (
                         <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="cuisine-restaurant">
                             <img src={restaurant.image_url} alt={restaurant.name}></img>
                             <div>{restaurant.name}</div>

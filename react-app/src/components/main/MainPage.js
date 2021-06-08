@@ -12,15 +12,17 @@ import Cultural from "./Tags/Cultural";
 const MainPage = () => {
     const dispatch = useDispatch();
 
-    const restaurantsToDisplay = useSelector(state => state.restaurants.restaurants) || {};
+    const allRestaurants = useSelector(state => state.restaurants.restaurants) || {};
     const cuisine_filter_id = useSelector(state => state.restaurants.cuisine_filter_id);
 
     const getAllRestaurantsToDisplay = async (e) => {
         await dispatch(getAllRestaurants());
     };
 
+    // getAllRestaurants()
+
     useEffect(() => {
-        if (!Object.keys(restaurantsToDisplay).length || cuisine_filter_id !== 0) getAllRestaurantsToDisplay();
+        if (!Object.keys(allRestaurants).length || cuisine_filter_id !== 0) getAllRestaurantsToDisplay();
     });
 
     return (
