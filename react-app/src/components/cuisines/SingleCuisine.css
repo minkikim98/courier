@@ -1,0 +1,17 @@
+.cuisine_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuisine-restaurant {
+    width: 300px;
+
+    border: 1px solid blue;
+}
+
+.cuisine-restaurant img {
+    width: 300px;
+    height: 150px;
+
+    object-fit: cover;
+}

@@ -51,6 +51,7 @@ def seed_restaurants():
     poki.cuisines.append(asian)
     poki.cuisines.append(japanese)
     poki.tags.append(culture)
+    poki.tags.append(popular)
     db.session.add(poki)
 
     #4

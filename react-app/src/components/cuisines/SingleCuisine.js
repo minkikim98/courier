@@ -8,6 +8,8 @@ import { getFilteredRestaurants } from "../../store/restaurants";
 import NavBar from "../navbar/NavBar";
 import Categories from "../main/Categories/Categories";
 
+import "./SingleCuisine.css"
+
 const SingleCuisine = () => {
     const cuisineId = useParams().cuisineId;
 
@@ -29,9 +31,9 @@ const SingleCuisine = () => {
             <NavBar />
             <div className="main-body">
                 <Categories />
-                <div>
+                <div className="cuisine-container">
                     {restaurantsToDisplay && Object.values(restaurantsToDisplay).map(restaurant => (
-                        <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="tagged__restaurant">
+                        <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} className="cuisine-restaurant">
                             <img src={restaurant.image_url} alt={restaurant.name}></img>
                             <div>{restaurant.name}</div>
                             <div>{restaurant.address}</div>

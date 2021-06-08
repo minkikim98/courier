@@ -29,8 +29,8 @@ const MainPage = () => {
             <div className="main-body">
                 <Categories />
                 <Popular />
-                <NationalFavorites />
-                <Cultural />
+                {/* <NationalFavorites />
+                <Cultural /> */}
             </div>
             {/* <Footer /> */}
         </div>
