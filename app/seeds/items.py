@@ -305,12 +305,298 @@ def seed_items():
     db.session.add(item70)
 
 
+    # Tony's Pizza Napoletana
+
+    # Popular
+    item71 = Item(name="New Yorker", description="Mozzarella, hand crushed tomato sauce. Natural casing pepperoni, sliced Italian fennel sausage calabrese sausage, ricotta, chopped garlic, and oregano. (Gold Metal Winner Las Vegas 2013).", price=37, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/88d7768c-c906-4bcb-bf6d-ebce6d51fb0f-retina-large.jpg")
+    db.session.add(item71)
+
+    item72 = Item(name="Classic Pepperoni", description="", price=26, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/f7192f50-9521-4d6c-80f0-f34fbba193cc-retina-large-jpeg")
+    db.session.add(item72)
+
+    item73 = Item(name="Cheese", description="Vegetarian", price=35, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/c67c6f9a-5761-44c6-87bb-1e6679a67150-retina-large-jpeg")
+    db.session.add(item73)
+
+    item74 = Item(name="Caesar Salad", description="Caesar dressing with romaine, house croutons, Parmigiano, and white anchovies", price=15, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/172ae69e-cc6f-4f88-9b59-825012a588ea-retina-large-jpeg")
+    db.session.add(item74)
+
+    item75 = Item(name="Garlic Bread", description="", price=8, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/7b7ca99f-1b30-41a6-86a7-fa9e734b949c-retina-large-jpeg")
+    db.session.add(item75)
+
+    item76 = Item(name="Meatballs", description="Pecorino and parsley.", price=10.5, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/94c8b4e3-9852-4d02-ab96-7c1628d00b42-retina-large-jpeg")
+    db.session.add(item76)
+
+    # Sides
+    item77 = Item(name="Gluten-Free Breadsticks", description="", price=7, restaurant_id=4,
+        image_url="")
+    db.session.add(item77)
+
+    # Housemade Pasta
+    item78 = Item(name="Pasta Genovese", description="Vegetarian. Linguini, pesto cream, goat cheese, sun-dried tomatoes and artichoke hearts.", price=27, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/bf2d4cff-9683-4383-a518-f379cb222912-retina-large-jpeg")
+    db.session.add(item78)
+
+    item79 = Item(name="Spaghetti & Meatballs", description="Pecorino and parsley.", price=28, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/3c3c1740-f875-4b37-bf62-c082e170ec6a-retina-large-jpeg")
+    db.session.add(item79)
+
+    # Classic American
+    item80 = Item(name="Classic Cheese", description="Vegetarian", price=24, restaurant_id=4,
+        image_url="")
+    db.session.add(item80)
+
+    item81 = Item(name="Classic Pepperoni", description="", price=26, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/f7192f50-9521-4d6c-80f0-f34fbba193cc-retina-large-jpeg")
+    db.session.add(item81)
+
+    item82 = Item(name="Jersey's Treton Tomato Pie", description="Vegetarian. Sliced mozzarella cheese, hand crushed tomato sauce, oregano, garlic, Parmigiana, and olive oil.", price=25.5, restaurant_id=4,
+        image_url="")
+    db.session.add(item82)
+
+    item83 = Item(name="Picante", description="Mozzarella, garlic, pepperoni, linguica, calabrese peppers, serrano, and banana peppers, pork chorizo, green onions, cholula, and ricotta cheese.", price=30, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/10065f24-e2b1-4927-a002-506a61d93184-retina-large.jpg")
+    db.session.add(item83)
+
+    # Classic Italian
+    item84 = Item(name="Cal Italia", description="Asiago, mozzarella, Italian Gorgonzola, croatian sweet fig preserve, prosciutto di parma, balsamic reduction, and no sauce. (gold medal winner food network pizza champions challenge).", price=31, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/c881a5ac-f6d6-470e-9f8b-f20af25a100a-retina-large.jpg")
+    db.session.add(item84)
+
+    item85 = Item(name="Prosciutto E Pomodorini", description="Mozzarella, prosciutto di parma, arugula, cherry tomatoes, and Parmesan cheese.", price=30, restaurant_id=4,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/d75a9c1d-6bd4-4963-bef8-9d43ad09ebd5-retina-large-jpeg")
+    db.session.add(item85)
+
+    # 20" NY
+    item86 = Item(name="The Big Kahuna", description="Freshly sliced pineapple rings, bacon and ham.", price=39, restaurant_id=4,
+        image_url="")
+    db.session.add(item86)
+
+    item87 = Item(name="Piccante", description="Chorizo, ￼garlic, green onions, cholula, ricotta, linguica, serrano, banana peppers, and pepperoni.", price=39, restaurant_id=4,
+        image_url="")
+    db.session.add(item87)
+
+    # Wines
+    item88 = Item(name="Alexander Valley Merlot", description="Aromas of black cherry compote and ripe plum are accentuated with hints of vanilla and cardamom.", price=22, restaurant_id=4,
+        image_url="")
+    db.session.add(item88)
+
+    item89 = Item(name="Falanghina Iovine", description="This is the Italian varietal for all Chardonnay drinkers that want to try something new. Tropical fruit flavors, full bodied with a nice mineral finish", price=17, restaurant_id=4,
+        image_url="")
+    db.session.add(item89)
+
+    item90 = Item(name="Nebbiolo Renato Ratti", description="With scents of strawberry and raspberry, this wine is pleasantly bitterish, velvety, at once, elegant and full.", price=26, restaurant_id=4,
+        image_url="")
+    db.session.add(item90)
+
+    item91 = Item(name="Pinot Grigio Ketmeir", description="A dry, well-structured wine with ripe apple fruit flavors and good acidity.", price=19, restaurant_id=4,
+        image_url="")
+    db.session.add(item91)
+
+    # KFC
+    item92 = Item(name="4 pc. Chicken Combo", description="A Breast, Thigh, drum, & wing available in Original Recipe or Extra Crispy, 1 side of your choice, biscuit, and a medium drink. (1180-1890 cal.)", price=15.23, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/c57f97e3-5c41-4aac-875d-ace6915bc5b2-retina-large-jpeg")
+    db.session.add(item92)
+
+    item93 = Item(name="Famous Bowl", description="Creamy mashed potatoes, sweet corn and bite-sized chunks of crispy chicken are layered together then drizzled with home-style gravy and topped with a perfect blend of three shredded cheeses. (840-1120 cal.)", price=7.43, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/be55cd7b-cc00-4890-a70d-9e5b7fcea151-retina-large-png")
+    db.session.add(item93)
+
+    item94 = Item(name="Large Popcorn Nuggets", description="All white meat Popcorn Nuggets.(620-750 cal.)", price=7.43, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/6843f3bf-9ca8-4238-9378-640ad0d28735-retina-large-jpeg")
+    db.session.add(item94)
+
+    item95 = Item(name="Large Beverage", description="Select an ice-cold beverage. (0-430 cal.)", price=3.35, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/aaa41ffa-4dae-41a7-a830-7f1dd33a67d8-retina-large.jpg")
+    db.session.add(item95)
+
+    item96 = Item(name="8 Piece Meal", description="8 pieces of our freshly prepared chicken, available in Original Recipe or Extra Crispy, 2 large sides of your choice, and 4 biscuits. (2620-4980 cal.)", price=35.27, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/6fa8d90c-8d9d-4473-a832-d656fe2bc5c3-retina-large-jpeg")
+    db.session.add(item96)
+
+    item97 = Item(name="12 Piece Meal", description="12 pieces of our freshly prepared chicken, available in Original Recipe or Extra Crispy, 6 biscuits, and 3 large sides of your choice. (5090-9200 cal.)", price=46.31, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/3bc27f63-b139-4652-ae6a-4329a63da8f0-retina-large-png")
+    db.session.add(item97)
+
+    item98 = Item(name="16 Piece Meal", description="16 pieces of our freshly prepared chicken, available in Original Recipe or Extra Crispy, 8 biscuits, and 4 large sides of your choice. (6840-11880 cal.)", price=60.83, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/0438dbdf-763f-4464-9926-c40c7f7f1299-retina-large-png")
+    db.session.add(item98)
+
+    item99 = Item(name="6 Kentucky Fried Wings", description="6 Wings available in Honey BBQ, Buffalo, Nashville Hot or unsauced. Includes 1 Ranch dipping sauce. (500-880 cal.)", price=7.43, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/bae51586-d396-4b16-8d5b-db18727d79dc-retina-large.jpg")
+    db.session.add(item99)
+
+    item100 = Item(name="12 Kentucky Fried Wings", description="12 Wings available in Honey BBQ, Buffalo, Nashville Hot or unsauced. Includes 2 Ranch dipping sauces.(1000-1760 cal.)", price=14.75, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/40733e62-111d-4a55-8e39-712b71faf27f-retina-large-jpeg")
+    db.session.add(item100)
+
+    item101 = Item(name="24 Kentucky Fried Wings", description="24 Wings available in Honey BBQ, Buffalo, Nashville Hot or unsauced. Includes 4 Ranch dipping sauces. (2000-3250 cal.)", price=27.11, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/bae51586-d396-4b16-8d5b-db18727d79dc-retina-large.jpg")
+    db.session.add(item101)
+
+    item102 = Item(name="Fries", description="Crispier than your average fry and seasoned with our Secret Recipe. (230-930 cal.)", price=7.19, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/be72bdc5-75e8-4c81-8385-fe883aa285ea-retina-large-jpeg")
+    db.session.add(item102)
+
+    item103 = Item(name="Mashed Potatoes & Gravy", description="Creamy mashed potatoes and our signature brown gravy. (130-590 cal.)", price=7.19, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/df611672-ffef-4913-9eb2-4f818fcf5d77-retina-large-jpeg")
+    db.session.add(item103)
+
+    item104 = Item(name="Cole Slaw", description="Freshly prepared in restaurant with cabbage, carrots, onion, and our signature dressing. (170-640 cal.)", price=7.19, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/6cacb88e-154f-457e-b9ea-36ebca741134-retina-large-jpeg")
+    db.session.add(item104)
+
+    item105 = Item(name="Whole Kernel Corn", description="Sweet yellow corn.(70-280 cal.)", price=3.95, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/790da73f-4ed4-4614-8d8b-ea92e2aef809-retina-large-jpeg")
+    db.session.add(item105)
+
+    item106 = Item(name="Mac & Cheese", description="Elbow macaroni covered in a rich, creamy cheddar cheese sauce.", price=3.95, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/7760500d-200a-4de0-b527-ae0ac2a9983a-retina-large-jpeg")
+    db.session.add(item106)
+
+    item107 = Item(name="A La Carte Breast", description="1 Breast piece of our freshly prepared chicken, available in Original Recipe or Extra Crispy. (390-530 cal.)", price=4.86, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/f7c6becf-cccb-417d-8ad2-e6243d6ca75e-retina-large-jpeg")
+    db.session.add(item107)
+
+    item108 = Item(name="A La Carte Drum", description="1 Drum piece of our freshly prepared chicken, available in Original Recipe or Extra Crispy. (130-170 cal.)", price=3.06, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/4d671f99-2bbb-4c84-9ca3-9ad59e38a099-retina-large-jpeg")
+    db.session.add(item108)
+
+    item109 = Item(name="A La Carte Thigh", description="1 Thigh piece of our freshly prepared chicken, available in Original Recipe or Extra Crispy. (280-330 cal.)", price=3.66, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/bf19d137-0332-4134-a4d0-018fbb2956ee-retina-large-jpeg")
+    db.session.add(item109)
+
+    item110 = Item(name="A La Carte Wing", description="1 Wing piece of our freshly prepared chicken, available in Original Recipe or Extra Crispy. (130-170 cal.)", price=2.82, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/4e1b6f23-eeab-4f7c-9c65-55f30935c940-retina-large-jpeg")
+    db.session.add(item110)
+
+    item111 = Item(name="1/2 Gallon Beverage Bucket", description="Perfect for a group. Select a beverage. (0-880 cal.)", price=4.79, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/f9b32b4e-dd60-4007-9c42-658ac9da1584-retina-large.png")
+    db.session.add(item111)
+
+    item112 = Item(name="Medium Beverage", description="Select an ice-cold beverage. (0-280 cal.)", price=2.75, restaurant_id=5,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/bb85591c-05e6-4dc9-a514-9632680bad2d-retina-large-jpeg")
+    db.session.add(item112)
+
+    # Honey Honey
+    item113 = Item(name="Two , Two and Two", description="Two eggs, two buttermilk, pancakes, and your choice of protein.", price=12.5, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/e0810ab2-9dcd-49fc-9817-cf4276b830c8-retina-large.jpg")
+    db.session.add(item113)
+
+    item114 = Item(name="Croissant Sandwich Breakfast", description="2 eggs scrambled with ham and Cheddar cheese in a warm croissant. Served with potatoes.", price=12.75, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ea0b83a0-4a5a-449f-9bfd-7b13f064dc72-retina-large.jpg")
+    db.session.add(item114)
+
+    item115 = Item(name="French Toast Breakfast", description="3 thick slices of challah bread and served with fresh strawberries.", price=10.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/29621100-c1dd-49dd-9326-e0edbcfc8fe1-retina-large-jpeg")
+    db.session.add(item115)
+
+    item116 = Item(name="Eggs Benedict", description="2 poached eggs, Canadian bacon on an English muffin, topped with hollandaise sauce, and served with potatoes or fruit or salad.", price=13.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/19eef8f4-aaae-4a74-9890-498cc0150026-retina-large.jpg")
+    db.session.add(item116)
+
+    item117 = Item(name="Crab Cake Florentine", description="2 poached eggs, spinach, crab cake on an English muffin, topped with hollandaise sauce, and served with potatoes or fruit or salad.", price=14.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/e76ff93f-f741-432a-9d86-3dab50fd848b-retina-large.jpg")
+    db.session.add(item117)
+
+    item118 = Item(name="Salmon Benedict Breakfast", description="2 poached eggs, salmon, tomato, served on an English muffin, topped with hollandaise sauce, and served with potatoes or salad or fruit.", price=14.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/2b97e18c-1486-4c7a-a5cc-d80efd0ac6a6-retina-large-jpeg")
+    db.session.add(item118)
+
+    item119 = Item(name="Sunrise Burrito Breakfast", description="Flour tortoise, chorizo, onion, eggs, and Cheddar cheese. Served on bed of black beans with sour cream and cilantro topping.", price=12.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/cc5b9100-7752-405f-ba6d-cbd7d381aee4-retina-large.jpg")
+    db.session.add(item119)
+
+    item120 = Item(name="2 Eggs Any Style", description="", price=9.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/aeef0d48-b533-42e9-83a7-add14eecfa40-retina-large.jpg")
+    db.session.add(item120)
+
+    item121 = Item(name="Milano", description="Mozzarella, tomato, garlic and fresh basil.", price=12.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/c4944269-4875-4279-a2c0-4a0e2c767e57-retina-large-jpeg")
+    db.session.add(item121)
+
+    item122 = Item(name="Tofu Scramble", description="Eggs, smoked tofu, green pepper, onion and cilantro.", price=12.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/adc40018-72ab-45bd-af95-d9e172c51f93-retina-large.jpg")
+    db.session.add(item122)
+
+    item123 = Item(name="Acapulco", description="Cheddar, salsa, avocado, sour cream and black bean chili.", price=12.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/44c981ad-9973-485c-ae2c-6e1f89a0e5fc-retina-large-jpeg")
+    db.session.add(item123)
+
+    item124 = Item(name="Original", description="Cheddar and onion.", price=9.45, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/21d70717-a7ba-43b6-a140-79c7e379e630-retina-large.jpg")
+    db.session.add(item124)
+
+    item125 = Item(name="Pesto", description="Cheddar, tomato, spinach, pine nuts, cheese, pesto and avocado.", price=12.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/8548dfc2-2d61-4373-9ef7-a2d23b103b05-retina-large.jpg")
+    db.session.add(item125)
+
+    item126 = Item(name="New Orleans", description="Swiss cheese, chicken breast, mushroom, sundried tomato and salsa.", price=12.45, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/57150b3c-8f57-41d6-9054-e27989d8c349-retina-large.jpg")
+    db.session.add(item126)
+
+    item127 = Item(name="Salsa", description="Cheddar, onion, tomato, avocado, olives, salsa and sour cream.", price=12.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/043026ed-d365-490e-9e5a-0751b27d119c-retina-large-jpeg")
+    db.session.add(item127)
+
+    item128 = Item(name="Mediterranean", description="Cheddar, onion, tomato, feta, artichoke, olives and avocado.", price=12.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/f8c7f76d-f219-43c9-9b7f-a986743a57dc-retina-large.jpg")
+    db.session.add(item128)
+
+    item129 = Item(name="Almond Crescent", description="", price=1.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ae4cbc8d-d28f-4d06-8012-e634dd89723b-retina-large-jpeg")
+    db.session.add(item129)
+
+    item130 = Item(name="SBK", description="Strawberry, banana, kiwi with cinnamon and brown sugar.", price=9, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/7ba1426f-24ab-4d41-b7d0-b86d2a6935fe-retina-large.jpg")
+    db.session.add(item130)
+
+    item131 = Item(name="Tuna", description="White albacore tuna, tomato, lettuce, sprout mustard and mayo.", price=13.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/5e3706dc-292c-425c-9f93-be8d8c944bad-retina-large.jpg")
+    db.session.add(item131)
+
+    item132 = Item(name="Crab Cake", description="Fresh crab cake, tomatoes, lettuce and mayo.", price=14.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/8d397ecd-e641-4367-ac16-0cbd5166c887-retina-large.jpg")
+    db.session.add(item132)
+
+    item133 = Item(name="Grilled Chicken", description="Chicken breast, tomato, lettuce, mozzarella cheese and pesto.", price=13.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/de4d4ddd-3eb4-4d1b-9f4e-e1d228aa4bf8-retina-large.jpg")
+    db.session.add(item133)
+
+    item134 = Item(name="Club", description="Smoked turkey, ham, bacon, tomato, lettuce and mayo.", price=13.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/5b058802-2df7-4254-87cc-44ff869c1be1-retina-large.jpg")
+    db.session.add(item134)
+
+    item135 = Item(name="Black Bean Chili", description="", price=3.95, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/fe8e6cf4-6684-47c2-8d4b-8178daed6f3f-retina-large-jpeg")
+    db.session.add(item135)
+
+    item136 = Item(name="Mexican", description="Chicken breast, black beans, corn torties, tomatoes, corn torties, cheddar cheese, sour cream, comes with its own dressing.", price=13.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ded66326-cded-4f3a-9bac-341f4dbb94ab-retina-large.jpg")
+    db.session.add(item136)
+
+    item137 = Item(name="Caesar", description="Romaine lettuce, parmesan cheese and croutons.", price=11.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/6d287721-e3f8-4a2c-963c-66eb69cd5221-retina-large-jpeg")
+    db.session.add(item137)
+
+    item138 = Item(name="Rigatoni San Luca", description="Sundried tomato, chicken breast, tomato, garlic and fresh basil.", price=14.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/28277b41-020b-4c4f-8337-9a6b21cf5024-retina-large.jpg")
+    db.session.add(item138)
+
+    item139 = Item(name="Fettuccine", description="Tossed with mushroom and pesto or alfredo sauce.", price=14.45, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ab107988-297d-4d1c-b21f-7455bfeacb47-retina-large-jpeg")
+    db.session.add(item139)
+
+    item140 = Item(name="Spaghetti Di Casa", description="Spaghetti with fresh tomato meat sauce.", price=14.25, restaurant_id=6,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/aacbad15-7291-499f-a92e-b30d0fe371ee-retina-large-jpeg")
+    db.session.add(item140)
+
     db.session.commit()
-
-
-    # item = Item(name="", description="", price=, restaurant_id=3,
-    #     image_url="")
-    # db.session.add(item)
 
 def undo_items():
     db.session.execute('TRUNCATE items RESTART IDENTITY CASCADE;')
