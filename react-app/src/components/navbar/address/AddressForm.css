@@ -11,6 +11,15 @@
     background-color: white;
 }
 
+#address-form label {
+    margin-top: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#address {
+    margin-top: 5px;
+}
+
 #address-form-button {
     border: none;
     background-color: transparent;
@@ -22,6 +31,6 @@
     cursor: pointer;
 }
 
-#close-address-form i {
+#close-address-form {
     cursor: pointer;
 }

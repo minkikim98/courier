@@ -10,8 +10,8 @@ const SidebarMenu = () => {
 
     return (
         <div id="sidebar-menu">
-            <div id="close-sidebar-menu">
-                <i className="fas fa-times"></i>
+            <div>
+                <i className="fas fa-times" id="close-sidebar-menu"></i>
             </div>
             <div className="sidebar-menu-options">
                 <Link className="sidebar-menu-option" to='/'>

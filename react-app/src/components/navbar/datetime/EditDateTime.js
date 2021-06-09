@@ -7,13 +7,10 @@ import "./EditDateTime.css"
 const EditDateTime = () => {
     const dispatch = useDispatch();
 
-    // const [date, setDate] = useState("");
-    // const [time, setTime] = useState("");
-
     return (
         <div id="date-time">
-            <div id="close-date-time">
-                <i className="fas fa-times"></i>
+            <div>
+                <i className="fas fa-times" id="close-date-time"></i>
             </div>
             <label>
                 Select delivery date.
@@ -21,9 +18,7 @@ const EditDateTime = () => {
             <input
                 name="date"
                 type="date"
-                // value={date}
                 onChange={(e) => {
-                    // setDate(e.target.value);
                     const dateInfo = e.target.value.split("-");
                     console.log(dateInfo)
                     dispatch(setDate(dateInfo[0], dateInfo[1], dateInfo[2]));
@@ -35,9 +30,7 @@ const EditDateTime = () => {
             <input
                 name="time"
                 type="time"
-                // value={time}
                 onChange={(e) => {
-                    // setTime(e.target.value);
                     const timeInfo = e.target.value.split(":");
                     dispatch(setTime(timeInfo[0], timeInfo[1]));
                 }}

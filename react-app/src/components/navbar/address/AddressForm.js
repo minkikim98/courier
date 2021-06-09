@@ -11,9 +11,9 @@ const AddressForm = () => {
     const [addressState, setAddressState] = useState("");
 
     return (
-        <form id="address-form">
-            <div id="close-address-form">
-                <i className="fas fa-times"></i>
+        <form id="address-form">            
+            <div>
+                <i className="fas fa-times" id="close-address-form"></i>
             </div>
             <label>
                 Edit your delivery address.
@@ -24,7 +24,6 @@ const AddressForm = () => {
                 value={addressState}
                 onChange={(e) => {
                     setAddressState(e.target.value);
-                    // console.log(e.target.value)
                     dispatch(setAddress(e.target.value));
                 }}
             />
@@ -41,7 +40,7 @@ const AddressForm = () => {
                 }
             </script> */}
             {/* <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzMYt6Ab9km0cWys7kcBBDjzvY_P6O5s0&libraries=places&callback=getSuggestions" async defer>
+                src="https://maps.googleapis.com/maps/api/js?key=?????&libraries=places&callback=getSuggestions" async defer>
             </script> */}
         </form>
     )

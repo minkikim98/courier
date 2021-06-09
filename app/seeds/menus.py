@@ -171,6 +171,33 @@ def seed_menus():
     db.session.add(honey_pasta)
 
 
+    # Smash Burger
+    smash = Restaurant.query.get(7)
+    smash_items = Item.query.filter(Item.restaurant_id == smash.id).all()
+
+    smash_popular = Menu(name="Popular Items", description="The most commonly ordered items and dishes from this store.", restaurant_id=7)
+    smash_burgers = Menu(name="Burgers | 100% Certified Angus Beef", restaurant_id=7)
+    smash_turkey = Menu(name="Turkey Burgers", restaurant_id=7)
+    smash_sides = Menu(name="Fries and Sides", restaurant_id=7)
+    smash_shakes = Menu(name="Milkshakes", restaurant_id=7)
+    
+
+    for item in smash_items:
+        item_id = item.id
+        if item_id >= 141 and item_id <= 146: smash_popular.menu_items.append(item)
+        if (item_id >= 147 and item_id <= 150) or (item_id >= 141 and item_id <= 143): smash_burgers.menu_items.append(item)
+        if item_id >= 151 and item_id <= 154: smash_turkey.menu_items.append(item)
+        if (item_id >= 155 and item_id <= 156) or (item_id >= 144 and item_id <= 146): smash_sides.menu_items.append(item)
+        if item_id >= 157 and item_id <= 161: smash_shakes.menu_items.append(item)
+        
+
+    db.session.add(smash_popular)
+    db.session.add(smash_burgers)
+    db.session.add(smash_turkey)
+    db.session.add(smash_sides)
+    db.session.add(smash_shakes)
+
+
     db.session.commit()
 
 

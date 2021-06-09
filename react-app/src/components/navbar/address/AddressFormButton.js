@@ -18,11 +18,8 @@ const AddressFormButton = () => {
         const closeAddressForm = () => {
             setShowAddressForm(false);
         };
-        // document.addEventListener('submit', closeEditDateTime);
         document.getElementById("close-address-form").addEventListener('click', closeAddressForm);
     }, [showAddressForm]);
-
-    // const now = Date.now();
 
     return (
         <>

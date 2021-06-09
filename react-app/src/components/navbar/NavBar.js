@@ -19,7 +19,7 @@ const NavBar = () => {
       <div className="navbar-left">
         <SidebarMenuButton />
         <EditDateTimeButton />
-        <div> to </div>
+        <div className="to-text"> to </div>
         <AddressFormButton />
       </div>
       <div className="navbar-center">

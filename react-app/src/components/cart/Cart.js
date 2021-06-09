@@ -53,8 +53,8 @@ const Cart = () => {
         
     return (
         <div className="cart">
-            <div id="close-cart">
-                <i className="fas fa-times"></i>
+            <div>
+                <i className="fas fa-times" id="close-cart"></i>
             </div>
             {/* <div>
                 {errors.map((error) => (
