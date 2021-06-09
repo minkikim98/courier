@@ -44,7 +44,7 @@ const SingleRestaurant = () => {
                                     <div className="item-info">
                                         <div className="item__name">{item.name}</div>
                                         <div className="item__description">{item.description}</div>
-                                        <div className="item__price">${item.price}</div>
+                                        <div className="item__price">${item.price.toFixed(2)}</div>
                                         <button onClick={e => addToCartCB(item.id)}><i className="fas fa-plus"></i></button>
                                     </div>
                                     {item.image_url && <img src={item.image_url} alt={item.name}/>}
