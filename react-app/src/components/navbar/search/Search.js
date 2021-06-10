@@ -10,21 +10,19 @@ const Search = () => {
     
     const allRestaurants = useSelector(state => state.restaurants.restaurants);
 
-    const filteredRestaurants = (searchString) => {
-        if (searchString) {
-            searchString = searchString.toLowerCase();
-            const filtered = Object.values(allRestaurants).filter(restaurant => {
-                return restaurant.name.toLowerCase().includes(searchString);
-            });
-            if (filtered.length === 0) return ['No Matches'];
-            else return filtered;
-        } else return []; // search term was blank
-    }
-
     useEffect(() => {
+        const filteredRestaurants = (searchString) => {
+            if (searchString) {
+                searchString = searchString.toLowerCase();
+                const filtered = Object.values(allRestaurants).filter(restaurant => {
+                    return restaurant.name.toLowerCase().includes(searchString);
+                });
+                if (filtered.length === 0) return ['No Matches'];
+                else return filtered;
+            } else return []; // search term was blank
+        }
         setSearchResults(filteredRestaurants(searchText))
-        console.log(searchResults.length)
-    }, [searchText]);
+    }, [searchText, allRestaurants]);
 
     let results;
     if (searchResults.length > 0) {

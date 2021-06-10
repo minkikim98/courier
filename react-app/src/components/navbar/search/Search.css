@@ -6,6 +6,7 @@
     color: black;
     font-family: "Open Sans", sans-serif;
     padding: 10px;
+    font-size: 16px;
 }
 
 .search-result:hover {

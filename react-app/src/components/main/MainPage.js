@@ -30,15 +30,15 @@ const MainPage = () => {
     return (
         <div>
             <NavBar />
-            <div className="main-body">
-                {allRestaurantsLoaded() && <div>
+            {allRestaurantsLoaded() && <div className="main-body">
+                <div>
                     <Categories />
                     <Popular />
                     <NationalFavorites />
                     <Lunch />
                     <Cultural />
-                </div>}
-            </div>
+                </div>
+            </div>}
             {/* <Footer /> */}
         </div>
     )

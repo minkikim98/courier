@@ -222,6 +222,84 @@ def seed_menus():
     db.session.add(subway_drinks)
 
 
+    # Hinodeya
+    hinodeya = Restaurant.query.get(9)
+    hinodeya_items = Item.query.filter(Item.restaurant_id == hinodeya.id).all()
+
+    hinodeya_popular = Menu(name="Popular Items", description="The most commonly ordered items and dishes from this store.", restaurant_id=9)
+    hinodeya_ramen = Menu(name="Ramen: Japanese Noodles", restaurant_id=9)
+    hinodeya_okazu = Menu(name="Okazu - Side Dish, Japanese", restaurant_id=9)
+    hinodeya_otsumami = Menu(name="Otsumami - Small Bites, Japanese", restaurant_id=9)
+    hinodeya_beverages = Menu(name="Beverages", restaurant_id=9)
+
+    
+    for item in hinodeya_items:
+        item_id = item.id
+        if item_id >= 193 and item_id <= 201: hinodeya_popular.menu_items.append(item)
+        if (item_id >= 193 and item_id <= 195) or (item_id >= 196 and item_id <= 199): hinodeya_ramen.menu_items.append(item)
+        if item_id == 195 or item_id == 200 or (item_id >= 202 and item_id <= 205): hinodeya_okazu.menu_items.append(item)
+        if item_id == 206 or item_id == 207 or item_id == 201: hinodeya_otsumami.menu_items.append(item)
+        if item_id >= 208 and item_id <= 212: hinodeya_beverages.menu_items.append(item)
+        
+    db.session.add(hinodeya_popular)
+    db.session.add(hinodeya_ramen)
+    db.session.add(hinodeya_okazu)
+    db.session.add(hinodeya_otsumami)
+    db.session.add(hinodeya_beverages)
+
+
+    # Hinodeya
+    lers = Restaurant.query.get(10)
+    lers_items = Item.query.filter(Item.restaurant_id == lers.id).all()
+
+    lers_popular = Menu(name="Popular Items", description="The most commonly ordered items and dishes from this store.", restaurant_id=10)
+    lers_appetizers = Menu(name="Appetizers", restaurant_id=10)
+    lers_noodles = Menu(name="Pan Fried Noodles", restaurant_id=10)
+    lers_curries = Menu(name="Coconut Milk Curries", restaurant_id=10)
+    lers_specialties = Menu(name="House Specialties", restaurant_id=10)
+    lers_sides = Menu(name="Side Dishes", restaurant_id=10)
+
+    
+    for item in lers_items:
+        item_id = item.id
+        if item_id >= 213 and item_id <= 220: lers_popular.menu_items.append(item)
+        if (item_id >= 221 and item_id <= 224) or (item_id >= 216 and item_id <= 217): lers_appetizers.menu_items.append(item)
+        if item_id >= 213 and item_id <= 215: lers_noodles.menu_items.append(item)
+        if item_id >= 218 and item_id <= 220: lers_curries.menu_items.append(item)
+        if item_id >= 225 and item_id <= 231: lers_specialties.menu_items.append(item)
+        if item_id >= 232 and item_id <= 237: lers_sides.menu_items.append(item)
+
+    db.session.add(lers_popular)
+    db.session.add(lers_appetizers)
+    db.session.add(lers_noodles)
+    db.session.add(lers_curries)
+    db.session.add(lers_specialties)
+    db.session.add(lers_sides)
+
+
+    # Chipotle
+    chipotle = Restaurant.query.get(11)
+    chipotle_items = Item.query.filter(Item.restaurant_id == chipotle.id).all()
+
+    chipotle_popular = Menu(name="Popular Items", description="The most commonly ordered items and dishes from this store.", restaurant_id=11)
+    chipotle_entrees = Menu(name="Entrees", restaurant_id=11)
+    chipotle_sides = Menu(name="Sides", restaurant_id=11)
+    chipotle_drinks = Menu(name="Drinks", restaurant_id=11)
+
+    
+    for item in chipotle_items:
+        item_id = item.id
+        if item_id >= 238 and item_id <= 244: chipotle_popular.menu_items.append(item)
+        if item_id >= 238 and item_id <= 242: chipotle_entrees.menu_items.append(item)
+        if (item_id >= 243 and item_id <= 245) or (item_id >= 247 and item_id <= 252): chipotle_sides.menu_items.append(item)
+        if (item_id >= 253 and item_id <= 260) or item_id == 246: chipotle_drinks.menu_items.append(item)
+
+    db.session.add(chipotle_popular)
+    db.session.add(chipotle_entrees)
+    db.session.add(chipotle_sides)
+    db.session.add(chipotle_drinks)
+
+
     db.session.commit()
 
 

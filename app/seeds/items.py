@@ -807,6 +807,285 @@ def seed_items():
         image_url="")
     db.session.add(item192)
 
+
+    # Hinodeya
+    item193 = Item(name="Hinodeya Ramen (House Ramen)", description="Wheat noodle with outstanding koshi in a light, umami-happy broth made with dashi (bonito flakes and kombu seaweed) and scallops and flavored with scallop-and-pork oil. Topped with chashu pork and menma (bamboo shoots), ajitsuke tamago (marinated soft-cooled egg - raw or undercooked ). Nori (dried seaweed) green onion, baby spinach, sesame seeds, and red pepper.", price=14, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/0584c3f5-06b4-4de6-b1ae-258a6f6c009a-retina-large-jpeg")
+    db.session.add(item193)
+
+    item194 = Item(name="Spicy Miso Ramen", description="Downtown special. Wheat noodle with outstanding koshi in our spicy dashi broth flavored with miso and chicken topped with chashu pork, menma, ajitsuke tam ago, nori, green onion, sesame seeds, and red pepper.", price=16, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/cba49990-8a22-437e-ae79-48faf4791385-retina-large-jpeg")
+    db.session.add(item194)
+
+    item195 = Item(name="Gyoza (5)", description="Dumplings filled with pork and chicken and served with dashi sauce.", price=7, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/811f736d-fe27-4d82-a42b-812b24c724f3-retina-large-jpeg")
+    db.session.add(item195)
+
+    item196 = Item(name="Creamy Ramen", description="Vegan. Limited. Spinach vegan wheat noodle in a rich, creamy vegan broth made with shiitake \"dashi,\" soy milk and sesame. Topped with inari (fried sweet tofu), crispy kale acorn squash, shiitake mushrooms, nori (dried seaweed), sesame seeds and bell pepper.", price=15, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/b9675bf7-7fec-4a77-a065-19d0ad18ceb0-retina-large-jpeg")
+    db.session.add(item196)
+
+    item197 = Item(name="Spicy Miso Butter Corn Ramen", description="Wheat noodle with outstanding KUSHI in our spicy dashi broth flavored with miso and chicken. Topped with chasyu pork, menma, ajitsuke tamago, butter, corn, nori, green onion,sesame, and red pepper.", price=18, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/82eea21b-11d1-4114-9e8d-50e81c39eff8-retina-large-jpeg")
+    db.session.add(item197)
+
+    item198 = Item(name="Tori Paitan (Chicken Ramen)", description="Limited. Wheat noodle outstanding koshi in rich, creamy dashi broth made with chicken, pork and scallops are added for flavor. Topped with chashu chicken, shiitake, ajitsuke tamago (raw or undercooked), nori, baby spinach, sesame seeds and red pepper.", price=16, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/33c7786a-fb5d-42a5-a18f-870a0b713583-retina-large-jpeg")
+    db.session.add(item198)
+
+    item199 = Item(name="Zen Ramen", description="Vegan. Wheat noodle with outstanding koshi in a light umami broth made with vegan dashi (kombu, shiitake). And white say sauce inspired by traditional Japanese shoujin temple techniques. Topped with shiitake, nori, carrots, inari (fried sweet tofu), fried kale, baby spinach and goji berries.", price=15, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/325c9bd0-3af5-400a-89d1-51bf6cc39497-retina-large-jpeg")
+    db.session.add(item199)
+
+    item200 = Item(name="Crispy Chicken Kara-Age", description="Japanese style fried chicken with black pepper served with matcha salt.", price=10, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/a2566a70-1b9a-4571-80b9-b8805a397a47-retina-large-jpeg")
+    db.session.add(item200)
+
+    item201 = Item(name="Takoyaki (4)", description="Topped with okonomi sauce and bonito flakes.", price=6, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/1608e887-be30-4904-8bb2-3f2b4b64a76a-retina-large-jpeg")
+    db.session.add(item201)
+
+    item202 = Item(name="Fried Calamari", description="Japanese style deep fried calamari Seasoned with soy sauce. Good with mayonnaise and chili pepper.", price=7, restaurant_id=9,
+        image_url="")
+    db.session.add(item202)
+
+    item203 = Item(name="EBI (shrimp )Tempura. 4pcs", description="Tempura is a Japanese dish of lightly-battered and deep-fried shrimp. With match salt and teriyaki sauce.", price=10, restaurant_id=9,
+        image_url="")
+    db.session.add(item203)
+
+    item204 = Item(name="Fried Oysters (5)", description="Oysters from hiroshima, japan, crisply fried and served with okonomi sauce.", price=9, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/e2cf661f-9fa2-4b92-b1db-42fa3d531911-retina-large-jpeg")
+    db.session.add(item204)
+
+    item205 = Item(name="Yasai Kara-Age (3)", description="Vegan. Vegetable tempura Japanese style fried vegetable mix). Such as onion, carrot and kale. Served with sesame sauce.", price=8, restaurant_id=9,
+        image_url="")
+    db.session.add(item205)
+
+    item206 = Item(name="Age Dashi Tofu", description="Deep fried tofu with Dashi-based sauce. Dashi is Japanese soup made by simmering dried bonito flakes.", price=5, restaurant_id=9,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/b91e3207-af63-4955-b731-b07c688d6cad-retina-large.jpg")
+    db.session.add(item206)
+
+    item207 = Item(name="Edamame", description="Vegan. Izakaya-style soybean snack.", price=4, restaurant_id=9,
+        image_url="")
+    db.session.add(item207)
+
+    item208 = Item(name="Arrowhead water (16.9 fl oz )", description="100% Mountain spring water", price=2, restaurant_id=9,
+        image_url="")
+    db.session.add(item208)
+
+    item209 = Item(name="Calpico Soda", description="The beverage has a light , somewhat milky , and slightly acidic flavor , similar to plain or vanilla flavored yogurt.", price=3, restaurant_id=9,
+        image_url="")
+    db.session.add(item209)
+
+    item210 = Item(name="Coke(12 fl oz)", description="", price=2.5, restaurant_id=9,
+        image_url="")
+    db.session.add(item210)
+
+    item211 = Item(name="Diet Coke(12 fl oz)", description="", price=2.5, restaurant_id=9,
+        image_url="")
+    db.session.add(item211)
+
+    item212 = Item(name="Ramune Soda", description="", price=3, restaurant_id=9,
+        image_url="")
+    db.session.add(item212)
+
+
+    # Lers
+    item213 = Item(name="Pad See-Ew", description="Pan-fried flat noodle served with tofu.", price=13.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/f5027cea-6a12-4122-973e-242988646e6b-retina-large-jpeg")
+    db.session.add(item213)
+
+    item214 = Item(name="Pad Thai", description="Gluten-free. Traditional Thai style pan-fried rice noodles. Served with crushed peanut and choice of protein.", price=13.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/796b5cd2-81c9-45bc-910d-d57188d9b183-retina-large.jpg")
+    db.session.add(item214)
+
+    item215 = Item(name="Pad Kee Mow", description="Spicy pan-fried flat noodle with basil, bell peppers, bean sprouts, and choice of protein.", price=13.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/79e53421-6776-4a9b-bf73-44817b00c157-retina-large-jpeg")
+    db.session.add(item215)
+
+    item216 = Item(name="Fried Rolls", description="Delicious traditional vegetable fried rolls. Served with sweet chili sauce.", price=10.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/d3d70555-edf7-42ee-8ee3-6a77e04d0a9c-retina-large-jpeg")
+    db.session.add(item216)
+
+    item217 = Item(name="Chicken Satay", description="Perfection grilled chicken skewers, served with cucumber salad and peanut sauce.", price=11.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/7bb9e8a1-06e2-4830-a07c-7579188353ad-retina-large-jpeg")
+    db.session.add(item217)
+
+    item218 = Item(name="Green Curry", description="Gluten-free. Medium spicy green curry with Thai eggplant, bamboo shoot, red bell peppers, kaffir lime leaves, and tofu. Does not include rice. (cannot make mild).", price=13.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/764ff336-4bff-437b-9f34-b02be9788642-retina-large.jpg")
+    db.session.add(item218)
+
+    item219 = Item(name="Yellow Curry", description="Gluten-free. Medium spicy yellow curry with potatoes, yellow onion and tofu. Does not include rice. (cannot make mild).", price=13.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/2b838105-6bfe-4069-812d-334f3b68418d-retina-large.jpg")
+    db.session.add(item219)
+
+    item220 = Item(name="Red Curry", description="Gluten-free. Medium spicy red curry with Thai eggplant, bamboo shoots, red bell peppers, kaffir lime leaves, and shrimp. Does not include rice. (cannot make mild).", price=13.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/192e5144-6fdd-45f8-857e-003169b141c3-retina-large.jpg")
+    db.session.add(item220)
+
+    item221 = Item(name="Crab Roll Cake", description="Crab Meat, water chestnut, seasoned ground pork filled in bean curd sheet with sides of Homemade Plum sauce, sliced cucumber and Tomato", price=15.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/98760176-cfd9-4f61-bb0a-6cc308564e2d-retina-large-jpeg")
+    db.session.add(item221)
+
+    item222 = Item(name="Fried Tofu", description="Simple but delicious fried tofu, served with sweet chili sauce.", price=9.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/cc0314cb-6f52-453c-bd87-59458066757d-retina-large-jpeg")
+    db.session.add(item222)
+
+    item223 = Item(name="Grilled Pork Skewers", description="BBQ marinated pork in skewers, served with chili and rice powder sauce.", price=11.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/cf7ac158-cc82-44e8-bf2f-5584ac510cff-retina-large-jpeg")
+    db.session.add(item223)
+
+    item224 = Item(name="Grilled Pork Shoulder", description="Smoky and Tasty! Grilled slices of Pork Shoulder with chili & rice powder sauce.", price=12.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/66f865de-34a2-4a25-8d47-0ea73aebb49a-retina-large-jpeg")
+    db.session.add(item224)
+
+    item225 = Item(name="BBQ Chicken", description="Marinated barbecued chicken, served with sweet and sour sauce.", price=15.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/c3dd8f31-0dc6-4394-a36d-e3238d122c6a-retina-large.jpg")
+    db.session.add(item225)
+
+    item226 = Item(name="Spinach and Peanut Sauce", description="Choice of meat with spinach, topped with peanut sauce.", price=15.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/0a72e856-cb0d-42f4-8c75-1beb9256548c-retina-large.jpg")
+    db.session.add(item226)
+
+    item227 = Item(name="Clams with Sweet Chili Sauce", description="Clam stir-fried with sweet chili paste and basil leaves.", price=18.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/3335da25-bf9a-4fd3-a339-1c091f99cb88-retina-large-jpeg")
+    db.session.add(item227)
+
+    item228 = Item(name="Tamarind Soup with Egg", description="Fried egg with acacia in housemade tamarind and chili broth.", price=18.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/11b8f3af-d7e7-40b9-a23e-8ae978138a6e-retina-large.jpg")
+    db.session.add(item228)
+
+    item229 = Item(name="Steamed Bass", description="Steamed fresh sea bass with chopped chili and fresh lime juice (guarantee fresh fish everyday).", price=36.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/fccaf5d3-8391-475e-bede-1f0c6dfdbb7e-retina-large-jpeg")
+    db.session.add(item229)
+
+    item230 = Item(name="Trout with Mango Sauce", description="Fried quick marinated whole trout in fish sauce and pepper, served with mango sauce (guarantee fresh fish everyday).", price=21.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/844885c0-b66d-498a-a778-f39b80df3416-retina-large.jpg")
+    db.session.add(item230)
+
+    item231 = Item(name="Tilapia with Basil Sauce", description="Whole fried tilapia with house chili based sauce (guarantee fresh fish everyday).", price=21.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/88bf37ed-4a8a-41c7-841c-a4b1c8b28a14-retina-large.jpg")
+    db.session.add(item231)
+
+    item232 = Item(name="Jasmine Steamed Rice", description="", price=2, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/a33106d8-5cce-45c4-ab2e-dc053bd650aa-retina-large.jpg")
+    db.session.add(item232)
+
+    item233 = Item(name="Jasmine Steamed Brown Rice", description="", price=2.5, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/0f0c49ed-9f36-4339-88da-d1a1e6d7695c-retina-large-jpeg")
+    db.session.add(item233)
+
+    item234 = Item(name="House Green Salad", description="", price=8.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/b2abafaa-2913-4819-9bcd-c89397fe1582-retina-large.jpg")
+    db.session.add(item234)
+
+    item235 = Item(name="Peanut Sauce", description="", price=3.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/8ee33de5-9e47-4842-905e-912ab81d0b75-retina-large.jpg")
+    db.session.add(item235)
+
+    item236 = Item(name="Steamed Mixed Vegetable", description="", price=5.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/ecd505a4-596c-40af-8ec3-92aafa8f2512-retina-large.jpg")
+    db.session.add(item236)
+
+    item237 = Item(name="Cucumber Salad", description="", price=3.95, restaurant_id=10,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/8c9c631f-8d0c-4825-a012-e725eca03914-retina-large.jpg")
+    db.session.add(item237)
+
+
+    # Chipotle
+    item238 = Item(name="Burrito Bowl", description="Your choice of freshly grilled meat or sofritas served in a delicious bowl with rice, beans, or fajita veggies, and topped with guac, salsa, queso blanco, sour cream or cheese.", price=10.95, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/7e0d8910-5206-43b1-b14d-a7ddb07edfc6-retina-large.jpg")
+    db.session.add(item238)
+
+    item239 = Item(name="Burrito", description="Your choice of freshly grilled meat or sofritas wrapped in a warm flour tortilla with rice, beans, or fajita veggies, and topped with guac, salsa, queso blanco, sour cream or cheese.", price=10.95, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/ef9ddcbc-9d81-4a0a-9640-98c14ed1b7d7-retina-large-jpeg")
+    db.session.add(item239)
+
+    item240 = Item(name="Tacos", description="Your choice of freshly grilled meat or sofritas served in a soft or hard-shell tortilla with guac, salsa, queso blanco, sour cream or cheese, and topped with hand-cut romaine lettuce.", price=4.05, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/7aaea142-83a0-453e-a2e5-652404ed04a6-retina-large-jpeg")
+    db.session.add(item240)
+
+    item241 = Item(name="Quesadilla", description="Cheese in a Flour Tortilla with your choice of meat, sofritas or fajita veggies and three included sides.", price=11.6, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/79242b1b-ee44-4766-b509-85fa92b736e1-retina-large-jpeg")
+    db.session.add(item241)
+
+    item242 = Item(name="Salad", description="Your choice of meat or sofritas served with our fresh supergreens lettuce blend made of Romaine, Baby Kale, and Baby Spinach. Add beans, queso blanco, salsa, guacamole, sour cream or cheese and top it off with our signature Chipotle-Honey Vinaigrette.", price=0.10526315789473684, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/03b1c181-f7a2-402f-956b-22c67c05fc23-retina-large-jpeg")
+    db.session.add(item242)
+
+    item243 = Item(name="Chips", description="540 cal.", price=2.2, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/2be68e26-2250-47e6-b0f2-0a307fcd0381-retina-large.jpg")
+    db.session.add(item243)
+
+    item244 = Item(name="Chips & Guacamole", description="770 cal.", price=5.45, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/ec5b155c-76ea-4a04-a586-3ec14bd8fce1-retina-large.jpg")
+    db.session.add(item244)
+
+    item245 = Item(name="Chips & Queso Blanco", description="780 cal.", price=5.45, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/29fd4a31-f604-46b5-9886-c611439483a2-retina-large.jpg")
+    db.session.add(item245)
+
+    item246 = Item(name="Mexican Coca-Cola", description="150 cal.", price=3.8, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/aa740d9f-3bc1-4020-a080-567a020362f0-retina-large.jpg")
+    db.session.add(item246)
+
+    item247 = Item(name="Chips & Roasted Chili-Corn Salsa", description="620 cal.", price=2.9, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/e2dffefb-2da7-435d-ab83-c17698f2067f-retina-large.jpg")
+    db.session.add(item247)
+
+    item248 = Item(name="Chips & Tomatillo-Green Chili Salsa", description="560 cal.", price=2.9, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/cfa8d1b8-3c06-422f-b66a-36fcba7fec58-retina-large.jpg")
+    db.session.add(item248)
+
+    item249 = Item(name="Chips & Fresh Tomato Salsa", description="570 cal.", price=2.9, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/155657e0-6177-42a9-9c0b-950271443044-retina-large.jpg")
+    db.session.add(item249)
+
+    item250 = Item(name="Chips & Tomatillo-Red Chili Salsa", description="570 cal.", price=2.9, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/10ec249f-240c-4075-85d1-34e2ca44e826-retina-large.jpg")
+    db.session.add(item250)
+
+    item251 = Item(name="Tortilla on the Side", description="320 cal.", price=0.3, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/721a32a8-069c-4fd9-bda6-b6fbd7efb86e-retina-large-jpeg")
+    db.session.add(item251)
+
+    item252 = Item(name="Side of Guacamole", description="230 cal.", price=3.2, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/03d053b1-32ac-410c-ba1f-37f560af736d-retina-large.jpg")
+    db.session.add(item252)
+
+    item253 = Item(name="Pressed Apple Juice", description="240 cal.", price=3.8, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/ca377e07-f4db-4ae7-9d23-8fc53fe2e1aa-retina-large.jpg")
+    db.session.add(item253)
+
+    item254 = Item(name="Peach Orange Juice", description="220 cal.", price=3.8, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/5a66c755-793d-4130-8d9d-123d8e644ae9-retina-large.jpg")
+    db.session.add(item254)
+
+    item255 = Item(name="Tractor Organic Lemonade", description="140 cal.", price=4.05, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/01078ab8-d8d6-4b5d-8690-a012e2530a99-retina-large-jpeg")
+    db.session.add(item255)
+
+    item256 = Item(name="Blackberry Izze", description="170 cal.", price=3.8, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/86f60e61-4504-46f7-8434-e17359b97319-retina-large.jpg")
+    db.session.add(item256)
+
+    item257 = Item(name="Grapefruit Izze", description="160 cal.", price=3.8, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/5754a519-e29d-463a-9cf3-d66c1ae071f4-retina-large.jpg")
+    db.session.add(item257)
+
+    item258 = Item(name="Bottled Water", description="0 cal.", price=3.35, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/544757de-f11f-4c01-bc87-df8018f98204-retina-large.jpg")
+    db.session.add(item258)
+
+    item259 = Item(name="San Pellegrino Sparkling ", description="0 cal.", price=3.5, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/b21e925b-ecba-4da1-a8f0-517eae3f77bc-retina-large.jpg")
+    db.session.add(item259)
+
+    item260 = Item(name="Mexican Sprite", description="160 cal.", price=3.8, restaurant_id=11,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=300,format=auto,quality=50/https://cdn.doordash.com/media/photos/b4be75a9-f950-4073-aa7b-2b9a165c2b70-retina-large-jpeg")
+    db.session.add(item260)
+
+
     db.session.commit()
 
 def undo_items():
