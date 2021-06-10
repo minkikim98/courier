@@ -97,7 +97,8 @@ def seed_menus():
         if item_id == 77 or item_id == 75: tony_sides.menu_items.append(item)
         if item_id == 78 or item_id == 79: tony_pasta.menu_items.append(item)
         if (item_id >= 80 and item_id <= 83) or item_id == 72: tony_american.menu_items.append(item)
-        if item_id == 84 or item_id == 85 or item_id == 73: tony_new_york.menu_items.append(item)
+        if item_id == 84 or item_id == 85: tony_italian.menu_items.append(item)
+        if item_id == 86 or item_id == 87 or item_id == 73: tony_new_york.menu_items.append(item)
         if item_id >= 88 and item_id <= 91: tony_wines.menu_items.append(item)
 
     db.session.add(tony_popular)
