@@ -181,7 +181,6 @@ def seed_menus():
     smash_sides = Menu(name="Fries and Sides", restaurant_id=7)
     smash_shakes = Menu(name="Milkshakes", restaurant_id=7)
     
-
     for item in smash_items:
         item_id = item.id
         if item_id >= 141 and item_id <= 146: smash_popular.menu_items.append(item)
@@ -190,12 +189,36 @@ def seed_menus():
         if (item_id >= 155 and item_id <= 156) or (item_id >= 144 and item_id <= 146): smash_sides.menu_items.append(item)
         if item_id >= 157 and item_id <= 161: smash_shakes.menu_items.append(item)
         
-
     db.session.add(smash_popular)
     db.session.add(smash_burgers)
     db.session.add(smash_turkey)
     db.session.add(smash_sides)
     db.session.add(smash_shakes)
+
+
+    # Subway
+    subway = Restaurant.query.get(8)
+    subway_items = Item.query.filter(Item.restaurant_id == subway.id).all()
+
+    subway_popular = Menu(name="Popular Items", description="The most commonly ordered items and dishes from this store.", restaurant_id=8)
+    subway_all_sandwiches = Menu(name="All Sandwiches", restaurant_id=8)
+    subway_salads = Menu(name="Salads", restaurant_id=8)
+    subway_sides = Menu(name="Sides", restaurant_id=8)
+    subway_drinks = Menu(name="Drinks", restaurant_id=8)
+    
+    for item in subway_items:
+        item_id = item.id
+        if item_id >= 162 and item_id <= 167: subway_popular.menu_items.append(item)
+        if item_id >= 162 and item_id <= 176: subway_all_sandwiches.menu_items.append(item)
+        if item_id >= 177 and item_id <= 182: subway_salads.menu_items.append(item)
+        if item_id >= 183 and item_id <= 188: subway_sides.menu_items.append(item)
+        if item_id >= 189 and item_id <= 192: subway_drinks.menu_items.append(item)
+        
+    db.session.add(subway_popular)
+    db.session.add(subway_all_sandwiches)
+    db.session.add(subway_salads)
+    db.session.add(subway_sides)
+    db.session.add(subway_drinks)
 
 
     db.session.commit()

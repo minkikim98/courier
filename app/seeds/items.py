@@ -681,6 +681,132 @@ def seed_items():
         image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/219db8ea-69d8-4916-9a62-01c67919c33c-retina-large-jpeg")
     db.session.add(item161)
 
+
+    # Subway
+    item162 = Item(name="Turkey Breast Footlong Regular Sub", description="If a classic is what you crave, then our oven roasted Turkey Breast is the sandwich for you. It’s full of flavor and packed with protein. Made-to-order with your choice of crisp veggies, served on our freshly baked bread.", price=9.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/324cdc60-44a2-40b0-a10c-8eedfb643d88-retina-large-jpeg")
+    db.session.add(item162)
+
+    item163 = Item(name="Tuna Footlong Regular Sub", description="You’ll love every bite of our classic tuna sandwich. 100% wild caught tuna blended with creamy mayo then topped with your choice of crisp, fresh veggies. 100% delicious.", price=9.39, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ce52463c-89ce-47a1-892b-4ede9d9a5829-retina-large-jpeg")
+    db.session.add(item163)
+
+    item164 = Item(name="Italian B.M.T.® Footlong Regular Sub", description="The Italian B.M.T.® sandwich is filled with Genoa salami, spicy pepperoni, and Black Forest Ham. Big. Meaty. Tasty. Get it.", price=9.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/2ffc468c-1685-4d45-86bc-e46f552dcc51-retina-large-jpeg")
+    db.session.add(item164)
+
+    item165 = Item(name="Veggie Delite® Footlong Regular Sub", description="The Veggie Delite® sandwich is crispy, crunchy, vegetarian perfection. Pile on the veggies any which way you want! It's one of eight 6-inch Fresh Fit™ subs with two servings of crisp veggies on freshly baked bread for under 400 calories.", price=6.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/5e5d0b90-45fb-41aa-a6e2-0c1225107260-retina-large-jpeg")
+    db.session.add(item165)
+
+    item166 = Item(name="Spicy Italian Footlong Regular Sub", description="Our Spicy Italian sandwich is a combo of pepperoni and Genoa salami. Pile on cheese, crunchy veggies, and finish it with your favorite sauce. Or don't. Your call.", price=8.69, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/db13291c-1ff1-4b8c-93c3-476358b72370-retina-large-jpeg")
+    db.session.add(item166)
+
+    item167 = Item(name="Meatball Marinara Footlong Regular Sub", description="The Meatball Marinara sandwich is drenched in irresistible marinara sauce, sprinkled with Parmesan cheese, topped with whatever you want (no judgement) and perfectly toasted just for you.", price=8.69, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/2f5e68e2-7e10-4e53-a573-b2563b945eb7-retina-large-jpeg")
+    db.session.add(item167)
+
+    item168 = Item(name="B.L.T. Footlong Regular Sub", description="The sub that proves great things come in threes. In this case, those three things happen to be crisp bacon, lettuce and juicy tomato. While there’s no scientific way of proving it, this B.L.T might be the most perfect sub in existence.", price=8.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/1f7b5ae1-1102-4a6a-91f5-e80c856ef050-retina-large-jpeg")
+    db.session.add(item168)
+
+    item169 = Item(name="Black Forest Ham Footlong Regular Sub", description="Black Forest Ham sandwich is classic. Just add your own flavor. Oh, and it's one of eight six-inch Fresh Fit™ subs with two servings of crisp veggies on freshly baked bread for under 400 calories.", price=7.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/a164b276-2984-42c8-a4b7-bbdd3b33ca89-retina-large-jpeg")
+    db.session.add(item169)
+
+    item170 = Item(name="Buffalo Chicken Footlong Regular Sub", description="When you’re looking to spice things up, do it with Frank’s Red Hot® and buffalo chicken. Our Buffalo Chicken Footlong is made with everyone’s favorite hot sauce – Frank’s RedHot® and topped with zesty ranch. Try it with lettuce, tomatoes and cucumbers! Frank’s RedHot® is a registered trademark of The French’s Food Company, LLC, licensed to Subway Franchisee Advertising Fund Trust Ltd. ®/© Subway IP LLC 2020.", price=10.59, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/3e7f3c93-a25d-4ba5-bbe0-806095a3dec0-retina-large-jpeg")
+    db.session.add(item170)
+
+    item171 = Item(name="Chicken & Bacon Ranch Footlong Regular Sub", description="The Chicken & Bacon Ranch sandwich is packed with tender all-white meat chicken with seasoning and marinade, savory bacon, melty Monterey cheddar cheese…and toasted. Aw yeah.", price=10.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/fa5c3129-d67f-4fe9-a42e-e45078a265f9-retina-large-jpeg")
+    db.session.add(item171)
+
+    item172 = Item(name="Cold Cut Combo Footlong Regular Sub", description="The Cold Cut Combo sandwich with ham, salami, and bologna (all turkey based) is a long-time Subway® favorite. Yeah. It's that good.", price=7.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/c6a0e0dc-6172-4a4d-9b1b-e2a43d9d01b2-retina-large-jpeg")
+    db.session.add(item172)
+
+    item173 = Item(name="Oven Roasted Chicken Footlong Regular Sub", description="The Oven Roasted Chicken sandwich is warm, with savory chicken on freshly baked bread with your choice of veggies. Oh, and it's one of eight 6-inch Fresh Fit™ subs with two servings of crisp veggies on freshly baked bread for under 400 calories.", price=9.69, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/01dd147d-413a-4db0-b33a-376ac5cc2017-retina-large-jpeg")
+    db.session.add(item173)
+
+    item174 = Item(name="Sweet Onion Chicken Teriyaki Footlong Regular Sub", description="Our Sweet Onion Chicken Teriyaki sandwich is stuffed with teriyaki-glazed chicken strips topped with our own fat-free sweet onion sauce. All that, and it's one of eight 6-inch Fresh Fit™ subs with two servings of crisp veggies on freshly baked bread for under 400 calories.", price=10.29, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/12cbcfaa-84ca-4b6f-be54-880ff6c6c151-retina-large-jpeg")
+    db.session.add(item174)
+
+    item175 = Item(name="Steak & Cheese Footlong Regular Sub", description="Our Steak & Cheese sandwich is where warm, delicious steak gets topped with melty cheesiness. Get crazy with veggies and sauces to make it what you want.", price=10.79, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/72105eb3-e240-4264-b35b-f1ec63127a22-retina-large-jpeg")
+    db.session.add(item175)
+
+    item176 = Item(name="Veggie Patty Footlong Regular Sub", description="Delicious veggie patties served on fresh 9-Grain Wheat bread. Top it with fresh lettuce, baby spinach, tomatoes, cucumbers, green peppers and red onions.", price=9.49, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/b93b6b68-8aa5-49a5-9628-1661bfd4546a-retina-large-jpeg")
+    db.session.add(item176)
+
+    item177 = Item(name="Black Forest Ham", description="The Black Forest Ham salad is a flavorful way to enjoy a Subway® favorite. Sliced ham, lettuce, and a pile of your favorite veggies - all tossed with your choice of dressing.", price=6.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/04827b06-49aa-42df-a6b8-3afcc14e2e32-retina-large-jpeg")
+    db.session.add(item177)
+
+    item178 = Item(name="Cold Cut Combo", description="The Cold Cut Combo salad has ham, salami, and bologna (all turkey-based) tossed together with crisp lettuce and your favorite veggies. Mix it up with whatever dressing you love best.", price=6.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/82374994-b445-4c37-8e75-4f58a0c0986b-retina-large-jpeg")
+    db.session.add(item178)
+
+    item179 = Item(name="Oven Roasted Chicken", description="The Oven Roasted Chicken salad has warm, savory chicken tossed together with crisp greens and any veggies you want. Your favorite sandwich, just in salad form.", price=7.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/120922aa-55b7-464d-a96c-9d930760409b-retina-large-jpeg")
+    db.session.add(item179)
+
+    item180 = Item(name="Sweet Onion Chicken Teriyaki", description="Enjoy our Sweet Onion Chicken Teriyaki flavors on a salad. Tender teriyaki-glazed chicken strips topped with fat-free sweet onion sauce over crisp greens and a generous pile of veggies. Flavor like whoa.", price=7.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ff3e0dab-41f8-4c7e-97a2-932dbff3ca78-retina-large-jpeg")
+    db.session.add(item180)
+
+    item181 = Item(name="Turkey Breast & Ham Salad", description="Tender turkey breast and flavorful Black Forest Ham with lots of crisp lettuce, tender spinach, and many more of your favorite veggies.", price=7.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/570a34ef-d2eb-4325-903e-c29e8b329b52-retina-large-jpeg")
+    db.session.add(item181)
+
+    item182 = Item(name="Veggie Delite®", description="Enjoy the simpler things? The Veggie Delite® salad is simply delish. A pile of your favorite veggies, finished with the dressing of your choice. Crisp. Delicious. All for you.", price=6.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/b74426b2-79e0-4bcc-8117-77b3399fc756-retina-large-jpeg")
+    db.session.add(item182)
+
+    item183 = Item(name="Chocolate Chip", description="Soft, buttery, chock full of chips. What more can we say? Enjoy.", price=0.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/e6d358ce-6eaa-4752-b4cb-9e16ba3f209b-retina-large-jpeg")
+    db.session.add(item183)
+
+    item184 = Item(name="Raspberry Cheesecake", description="The flavor of sweet raspberry. The richness of cheesecake. Together in one awesome cookie creation.", price=0.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ac735790-a0cf-449d-a59f-4a5e059e7cc8-retina-large-jpeg")
+    db.session.add(item184)
+
+    item185 = Item(name="White Chip Macadamia Nut", description="Chunks of Macadamia nuts and white chips in a ridiculously delicious cookie.", price=0.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/97050465-64e6-4249-bf69-d510709aa0b7-retina-large-jpeg")
+    db.session.add(item185)
+
+    item186 = Item(name="Musselman’s Apple Sauce", description="As delicious as our sandwiches are, they are even better when paired with the perfect side and drink or even adding a little something extra. With such a variety to choose from, there's truly something for every taste.", price=1.99, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/c2d16169-2602-430f-9b49-20a852f60aad-retina-large-jpeg")
+    db.session.add(item186)
+
+    item187 = Item(name="Baked Lay's® Original", description="", price=1.69, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/4605715c-f4a7-4b38-80dd-0df846889635-retina-large-jpeg")
+    db.session.add(item187)
+
+    item188 = Item(name="Miss Vickie’s® Jalapeño", description="", price=1.79, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/38cd9a81-eb36-419c-9112-6b170c105e3b-retina-large-jpeg")
+    db.session.add(item188)
+
+    item189 = Item(name="Coca-Cola®", description="", price=2.69, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/06cdfc47-04d5-47fe-85cb-fa7db700eead-retina-large-jpeg")
+    db.session.add(item189)
+
+    item190 = Item(name="DASANI® Water", description="As delicious as our sandwiches are, they are even better when paired with the perfect side and drink or even adding a little something extra. With such a variety to choose from, there's truly something for every taste.", price=2.69, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/2231433a-4116-41b5-af27-04a5fb0d12c3-retina-large-jpeg")
+    db.session.add(item190)
+
+    item191 = Item(name="Sprite®", description="", price=2.79, restaurant_id=8,
+        image_url="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=150,height=150,format=jpeg,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/75dd11cf-7d2a-4d45-b500-987ea0e0d955-retina-large-jpeg")
+    db.session.add(item191)
+
+    item192 = Item(name="Simply Orange® Juice", description="Treat yourself in the morning to refreshing Simply Orange®. Build your own breakfast sandwich and pair it with never sweetened or concentrated Simply Orange® to really get your morning started!", price=2.69, restaurant_id=8,
+        image_url="")
+    db.session.add(item192)
+
     db.session.commit()
 
 def undo_items():

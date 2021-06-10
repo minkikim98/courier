@@ -1,7 +1,8 @@
 # from tony import seed_data
 # from kfc import seed_data
 # from honey import seed_data
-from smash import seed_data
+# from smash import seed_data
+from subway import seed_data
 
 def printSeederData(restaurant_id, starting_item_id, data):
     nl = '\n'
@@ -13,4 +14,4 @@ def printSeederData(restaurant_id, starting_item_id, data):
         final_text += item_text
     return final_text
 
-print(printSeederData(7, 141, seed_data))
+print(printSeederData(8, 162, seed_data))
