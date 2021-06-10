@@ -6,6 +6,7 @@ import EditDateTimeButton from './datetime/EditDateTimeButton';
 import SidebarMenuButton from './menu/SidebarMenuButton';
 import AddressFormButton from './address/AddressFormButton';
 import ShowCartButton from '../cart/ShowCartButton';
+import Search from './search/Search';
 
 import logo from "../../images/logo.png";
 
@@ -30,7 +31,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-right">
         {user && <div className="navbar-welcome">Welcome, {user.username}!</div>}
-        <input type="text" placeholder="Search"/>
+        <Search />
         <ShowCartButton />
       </div>
     </div>

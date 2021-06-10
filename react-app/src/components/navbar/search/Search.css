@@ -1,0 +1,26 @@
+#search-bar {
+    /* padding: 5px; */
+}
+
+.search-result {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+}
+
+.search-result:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.search-result a {
+    color: black;
+    text-decoration: none;
+}
+
+.auto-dropdown {
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    /* padding: 10px; */
+    border: 1px solid rgb(203, 203, 203);
+}
