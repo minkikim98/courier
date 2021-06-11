@@ -19,12 +19,12 @@ const Footer = () => {
                         Created by Minki Kim
                     </div>
                     <div id="creator-info-links">
-                        <Link to="https://www.linkedin.com/in/min-ki-kim-34888a156/">
+                        <a href="https://www.linkedin.com/in/min-ki-kim-34888a156/">
                             <i className="fab fa-linkedin"></i>
-                        </Link>
-                        <Link to="https://github.com/minkikim98">
+                        </a>
+                        <a href="https://github.com/minkikim98">
                             <i className="fab fa-github-square"></i>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
