@@ -7,7 +7,8 @@ import SimpleNavBar from '../navbar/SimpleNavBar';
 import "./Intro.css";
 
 // import Logo from "../../images/logo.png"
-import introBanner from '../../images/intro-image.jpeg'
+import introBanner from '../../images/intro-image.jpeg';
+import headshot from '../../images/headshot.jpeg';
 
 const IntroPage = () => {
     return (
@@ -35,8 +36,13 @@ const IntroPage = () => {
                 </div>
                 <div id="intro-creator">
                     <div id="intro-creator__info">
-                        <div id="intro-creator__info-heading">Meet the creator:</div>
-                        <div id="intro-creator__info-text">Hi! My name is Minki. It's nice to meet you.</div>
+                        <div id="intro-creator__info-heading">
+                            <div>Meet the creator:</div>
+                            <img src={headshot} alt="A headshot of a very good-looking man."></img>
+                        </div>
+                        <div id="intro-creator__info-text">Hi! My name is Minki. It's nice to meet you. I'm an aspiring software developer with experience in Javascript, Python, Flask, React, and more! 
+                            If you want to see more of my projects or want to contact me, feel free to follow up with me on Github or LinkedIn!
+                        </div>
                     </div>
                 </div>
                 <Footer />

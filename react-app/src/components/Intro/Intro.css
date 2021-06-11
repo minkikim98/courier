@@ -81,15 +81,30 @@
 #intro-creator__info {
     display: flex;
     flex-direction: column;
-    margin: 50px 0px 0px 50px;
+    margin: 20px 0px 0px 50px;
 }
 
 #intro-creator__info-heading {
+    display: flex;
+    align-items: center;
     font-size: 60px;
     letter-spacing: 5px;
 }
 
+#intro-creator__info-heading img {
+    margin-left: 30px;
+}
+
 #intro-creator__info-text {
     margin-top: 30px;
-    font-size: 16px;
+
+    font-size: 20px;
+    line-height: 50px;
+
+    width: 80%;
+}
+
+#intro-creator__info img {
+    width: 200px;
+    border-radius: 100%;
 }
