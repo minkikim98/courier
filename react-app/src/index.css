@@ -9,10 +9,12 @@
 
     width: 1000px;
 
+    min-height: 600px;
+
     border-radius: 10px;
     /* border: 1px solid red; */
 }
 
 body {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }

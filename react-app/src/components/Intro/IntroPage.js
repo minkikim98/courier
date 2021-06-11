@@ -7,9 +7,9 @@ import "./Intro.css";
 
 const IntroPage = () => {
     return (
-        <div>
-            <img className="intro__hero-img" src="https://www.teahub.io/photos/full/38-388348_bicycle-wallpaper-hd.jpg" alt="Banner"></img>
-            <div className="intro">
+            // {/* <img className="intro__hero-img" src="https://www.teahub.io/photos/full/38-388348_bicycle-wallpaper-hd.jpg" alt="Banner"></img> */}
+        <div className="intro">
+            <div className="intro-section">
                 <div className="intro__banner-text">Welcome to Courier</div>
                 <div className="intro__caption">No gas. No fumes. Just fresh food pedaled straight to your doorstep.</div>
                 <div className="intro__description">Here at Courier, we don't belive that we have to sacrifice speed to make good time. We're committed 
@@ -18,6 +18,11 @@ const IntroPage = () => {
                     That's a win-win in our book.
                 </div>
                 <Link to="/" className="homepage-link">Ready to order?</Link>
+            </div>
+            <div className="intro-section">
+                <div>Meet the creator!</div>
+                <div>Hi! My name is Minki. It's nice to meet you.</div>
+
             </div>
         </div>
     )

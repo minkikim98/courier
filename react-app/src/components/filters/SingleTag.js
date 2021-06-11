@@ -4,9 +4,9 @@ import { useParams, Link } from 'react-router-dom';
 
 import { getAllRestaurants } from "../../store/restaurants"
 
-
 import NavBar from '../navbar/NavBar';
 import Categories from '../main/Categories/Categories';
+import Footer from '../footer/Footer';
 
 import "./Filter.css"
 
@@ -63,6 +63,7 @@ const SingleTag = () => {
                     ))}
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

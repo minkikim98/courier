@@ -8,7 +8,7 @@ import Popular from "./Tags/Popular";
 import NationalFavorites from "./Tags/NationalFavorites";
 import Cultural from "./Tags/Cultural";
 import Lunch from "./Tags/Lunch";
-// import Footer from "../footer/Footer"
+import Footer from "../footer/Footer"
 
 const MainPage = () => {
     const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const MainPage = () => {
                     <Cultural />
                 </div>
             </div>}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

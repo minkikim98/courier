@@ -4,7 +4,9 @@ import { useParams } from "react-router-dom";
 
 import { getSingleRestaurant } from "../../store/restaurants";
 import { addToCart, showCart } from "../../store/cart";
+
 import NavBar from "../navbar/NavBar"
+import Footer from "../footer/Footer";
 
 import "./SingleRestaurant.css"
 
@@ -54,6 +56,7 @@ const SingleRestaurant = () => {
                     </div>
                 ))}
             </div>}
+            <Footer />
         </div>
     )
 }
