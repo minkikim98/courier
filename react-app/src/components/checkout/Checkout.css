@@ -11,4 +11,11 @@
     flex-direction: column;
 
     width: 1000px;
+    border: 1px solid green;
+}
+
+.checkout-right {
+    width: 300px;
+
+    border: 1px solid blue;
 }
