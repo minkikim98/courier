@@ -1,5 +1,6 @@
 .checkout-body {
     display: flex;
+    justify-content: space-between;
 
     margin-top: 45px;
 
@@ -8,16 +9,30 @@
     border: 1px solid red;
 }
 
+.checkout-main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    border: 1px solid blue;
+}
+
 .checkout-main {
     display: flex;
     flex-direction: column;
 
-    width: 1000px;
+    width: 700px;
     border: 1px solid green;
 }
 
+.checkout-row {
+    
+}
+
 .checkout-right {
-    width: 300px;
+    width: 400px;
 
     border: 1px solid blue;
 }
