@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch} from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import LoginForm from "./components/auth/LoginForm";
 import SignUpForm from "./components/auth/SignUpForm";
-// import NavBar from "./components/NavBar";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import UsersList from "./components/UsersList";
 import User from "./components/User";
@@ -12,11 +12,11 @@ import IntroPage from "./components/Intro/IntroPage";
 import SingleCuisine from "./components/filters/SingleCuisine";
 import SingleRestaurant from "./components/restaurant/SingleRestaurant";
 import SingleTag from "./components/filters/SingleTag";
-// import { authenticate } from "./services/auth";
+import Checkout from "./components/checkout/Checkout";
+
 import { authenticate } from "./store/session";
 
 function App() {
-  // const [authenticated, setAuthenticated] = useState(false);
   const dispatch = useDispatch()
   const [loaded, setLoaded] = useState(false);
 
@@ -61,6 +61,9 @@ function App() {
         <Route path="/tags/:tagId" exact={true} >
           <SingleTag />
         </Route>
+        <ProtectedRoute path="/checkout" exact={true} >
+          <Checkout />
+        </ProtectedRoute>
       </Switch>
     </BrowserRouter>
   );
