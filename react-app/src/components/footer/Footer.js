@@ -20,10 +20,13 @@ const Footer = () => {
                     </div>
                     <div id="creator-info-links">
                         <a href="https://www.linkedin.com/in/min-ki-kim-34888a156/">
-                            <i className="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com/minkikim98">
-                            <i className="fab fa-github-square"></i>
+                            <i className="fab fa-github"></i>
+                        </a>
+                        <a href="https://angel.co/u/min-ki-kim">
+                            <i className="fab fa-angellist"></i>
                         </a>
                     </div>
                 </div>

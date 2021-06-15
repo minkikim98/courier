@@ -4,6 +4,8 @@
     margin-top: 45px;
 
     min-height: 600px;
+
+    border: 1px solid red;
 }
 
 .checkout-main {
