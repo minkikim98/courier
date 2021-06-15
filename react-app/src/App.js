@@ -53,9 +53,9 @@ function App() {
         <Route path="/tags/:tagId" exact={true} >
           <SingleTag />
         </Route>
-        <ProtectedRoute path="/checkout" exact={true} >
+        {/* <ProtectedRoute path="/checkout" exact={true} >
           <Checkout />
-        </ProtectedRoute>
+        </ProtectedRoute> */}
       </Switch>
     </BrowserRouter>
   );
