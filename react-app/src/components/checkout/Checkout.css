@@ -1,0 +1,14 @@
+.checkout-body {
+    display: flex;
+
+    margin-top: 45px;
+
+    min-height: 600px;
+}
+
+.checkout-main {
+    display: flex;
+    flex-direction: column;
+
+    width: 1000px;
+}
