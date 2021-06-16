@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { getCart } from "../../store/cart";
 import { removeFromCart } from "../../store/cart";
@@ -43,7 +44,9 @@ const Cart = () => {
                             <button className="cart__item-delete" onClick={e => removeFromCartCB(cartItem.item_id)}><i className="fas fa-trash"></i></button>
                         </div>
                     ))}
-                    <button className="cart__checkout">Checkout</button>
+                    <div id="cart__checkout-container">
+                        <Link to="/checkout" className="cart__checkout">Checkout</Link>
+                    </div>
                 </div>
             )
         }
