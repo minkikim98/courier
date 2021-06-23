@@ -4,13 +4,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import LoginForm from "./components/auth/LoginForm";
 import SignUpForm from "./components/auth/SignUpForm";
-import ProtectedRoute from "./components/auth/ProtectedRoute";
+// import ProtectedRoute from "./components/auth/ProtectedRoute";
 import MainPage from "./components/main/MainPage";
 import IntroPage from "./components/Intro/IntroPage";
 import SingleCuisine from "./components/filters/SingleCuisine";
 import SingleRestaurant from "./components/restaurant/SingleRestaurant";
 import SingleTag from "./components/filters/SingleTag";
-import Checkout from "./components/checkout/Checkout";
+// import Checkout from "./components/checkout/Checkout";
 
 import { authenticate } from "./store/session";
 
