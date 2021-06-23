@@ -1,4 +1,4 @@
-Courier
+*Courier
 
 A Doordash clone, built using Flask and React-Redux.
 
