@@ -16,7 +16,7 @@ const Footer = () => {
                 </Link>
                 <div id="creator-info">
                     <div>
-                        Created by Minki Kim
+                        Created by <a href="https://sites.google.com/view/minki-kim/home" className="creator-portfolio-link">Minki Kim</a>
                     </div>
                     <div id="creator-info-links">
                         <a href="https://www.linkedin.com/in/min-ki-kim-34888a156/">
