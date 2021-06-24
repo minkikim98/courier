@@ -24,7 +24,7 @@ In addition to these core features, there were stretch goals and bonus features,
 * Google Maps integration - Integrating Google Maps API to display geographical information - *TBA*.
 
 
-## Features
+## Feature Walkthrough
 
 ### Login/Signup
 Nothing too fancy here, just a standard UI for logging in to an existing account or signing up for a new one.
