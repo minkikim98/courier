@@ -44,6 +44,20 @@
     font-size: 12px;
 }
 
+.creator-portfolio-link {
+    text-decoration: none;
+    color: rgb(0, 191, 155);
+}
+
+.creator-portfolio-link:hover {
+    color: rgb(0, 169, 138);
+}
+
+.creator-portfolio-link:active {
+    text-decoration: none;
+    color: rgb(0, 191, 155);
+}
+
 #creator-info-links {
     display: flex;
     justify-content: center;
