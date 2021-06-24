@@ -1,10 +1,8 @@
 # Courier
 
-Courier is Doordash clone, built using Flask and React-Redux. Users can browse restaurants near the App Academy headquarters and add food items to their cart for checkout and delivery! 
+[Courier](https://aa-courier.herokuapp.com/about) is a [Doordash](https://www.doordash.com/) clone, built using Flask and React-Redux. Users can browse restaurants near the App Academy headquarters and add food items to their cart for checkout and delivery! 
 
-Live link at: https://aa-courier.herokuapp.com/about 
-
-## Stack
+## Tech Stack
     - Javascript
     - React
     - React-Redux
@@ -13,6 +11,11 @@ Live link at: https://aa-courier.herokuapp.com/about
     - PostgresSQL
     - HTML
     - CSS
+
+## Overview
+
+## Features
+
 
 ## Wiki
 https://github.com/minkikim98/courier/wiki
