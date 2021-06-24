@@ -34,12 +34,15 @@ I added a demo button if someone just wants to see how the site works.
 
 ### Restaurants
 This is the main page of the application. As you can see, users can see a list of suggested restaurants initially. I tried to be faithful to Doordash's main page, but you'll notice some differences too!  
+  
 When you load the main page, a Redux thunk fetches *all* the restaurant data from the backend and stores it in a slice of state! On subsequent visits to this page, the data is fetched from state! This reduces strain on the backend server.  
 
 ![](https://github.com/minkikim98/courier/blob/master/assets/images/main.png)
 
 ### Cuisines
 You can filter restaurants by what kind of food you're in the mood for. Each restaurant has a list of tags and cuisines that it's associated with in the database model. These aren't just hard-coded values! This approach makes it easier to add new restaurants and is good for scalability as well.  
+  
+By the way, I directly host the image URL's for the cuisine logos using Amazon's AWS technology!   
 
 ![](https://github.com/minkikim98/courier/blob/master/assets/images/cuisines.png)
 
