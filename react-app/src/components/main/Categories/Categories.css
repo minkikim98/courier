@@ -1,7 +1,14 @@
+@media screen and (max-width:1000px) {
+    .cuisines-container {
+        /* width: 100%; */
+        border: 1px solid red;
+    }
+}
+
 .cuisines-container {
     display: flex;
     justify-content: space-evenly;
-    /* border: 1px solid red; */
+    overflow: auto;
 }
 
 .cuisine {
@@ -15,10 +22,6 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-
-    /* border-radius: 10px; */
-
-    /* border: 1px solid blue; */
 }
 
 .cuisine-active {

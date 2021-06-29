@@ -14,3 +14,9 @@
     border-radius: 10px;
     /* border: 1px solid red; */
 }
+
+@media screen and (max-width: 1000px) {
+    .main-body {
+        width: 100%;
+    }
+}
