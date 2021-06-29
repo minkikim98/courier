@@ -1,17 +1,14 @@
 .tag-container {
     display: flex;
     justify-content: space-between;
-    /* font-size: 30px; */
     padding: 10px;
     margin-bottom: 20px;
 
-    /* border: 1px solid blue; */
 }
 
 .tag__left {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .tag__view-all {
@@ -20,7 +17,6 @@
     align-items: center;
 
     width: 100px;
-    /* height: 30px; */
     padding: 10px;
     margin-top: 30px;
 
@@ -103,13 +99,6 @@
     font-style: italic;
 
     width: 100%;
-    /* height: 10px; */
-
-    /* width: 200px;
-    height: 40px; */
-    /* white-space: nowrap; */
-    /* overflow: ; */
-    /* text-overflow: ellipsis; */
 }
 
 
@@ -133,4 +122,22 @@
 
 .tagged-restaurant__bottom img:hover {
     box-shadow: 0px 0px 20px 5px rgb(220, 220, 220);
+}
+
+@media screen and (max-width: 1000px) {
+    .tag-container {
+        flex-direction: column;
+    }
+
+    .tag__left {
+        flex-direction: row;
+    }
+
+    .tag__view-all {
+        margin: 0px 0px 0px 30px;
+    }
+
+    .tagged-restaurant__description {
+        display: none;
+    }
 }

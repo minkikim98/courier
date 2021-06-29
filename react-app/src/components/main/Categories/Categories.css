@@ -1,10 +1,3 @@
-@media screen and (max-width:1000px) {
-    .cuisines-container {
-        /* width: 100%; */
-        border: 1px solid red;
-    }
-}
-
 .cuisines-container {
     display: flex;
     justify-content: space-evenly;
@@ -44,4 +37,11 @@
 .cuisine:hover img {
     width: 55px;
     transition-duration: 200ms;
+}
+
+@media screen and (max-width:1000px) {
+    .cuisines-container {
+        /* width: 100%; */
+        border: 1px solid red;
+    }
 }

@@ -19,4 +19,8 @@
     .main-body {
         width: 100%;
     }
+
+    .tagged-restaurant__description {
+        display: none;
+    }
 }
