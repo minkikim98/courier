@@ -137,6 +137,10 @@
         margin: 0px 0px 0px 30px;
     }
 
+    /* .tagged-restaurant__top {
+        flex-direction: column;
+    } */
+
     .tagged-restaurant__description {
         display: none;
     }
