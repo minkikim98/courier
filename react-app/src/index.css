@@ -18,6 +18,7 @@
 @media screen and (max-width: 1000px) {
     .main-body {
         width: 100%;
+        margin-top: 60px;
     }
 
     .tagged-restaurant__description {
