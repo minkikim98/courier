@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -11,11 +11,11 @@ const Cart = () => {
     const dispatch = useDispatch();
     const cartInfo = useSelector(state => state.cart.cart);
     const user = useSelector(state => state.session.user);
-    // const [errors, setErrors] = useState([]);
+    const [errors, setErrors] = useState([]);
 
     const getCartItems = async (e) => {
-        await dispatch(getCart());
-        // if (data.errors) setErrors(data.errors);
+        const data = await dispatch(getCart());
+        if (data.errors) setErrors(data.errors);
     }
     
     const removeFromCartCB = async (itemId) => {
@@ -59,11 +59,11 @@ const Cart = () => {
             <div>
                 <i className="fas fa-times" id="close-cart"></i>
             </div>
-            {/* <div>
+            <div>
                 {errors.map((error) => (
                     <div>{error}</div>
                 ))}
-            </div> */}
+            </div>
             <div>
                 {cartInfo && cartContent}
             </div>
