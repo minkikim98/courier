@@ -42,22 +42,14 @@ def seed_cuisines():
     # convenience = Cuisine(name='Convenience', image_url="https://courier-images.s3-us-west-1.amazonaws.com/Convenience.jpeg")
     # db.session.add(convenience)
 
-
     # desserts = Cuisine(name='Desserts', image_url="")
     # db.session.add(desserts)
-
-
 
     # sandwiches = Cuisine(name='Sandwiches')
     # db.session.add(sandwiches)
 
-
-
-
     # vegan = Cuisine(name='Vegan')
     # db.session.add(vegan)
-
-    # # 15
 
     # vietnamese = Cuisine(name='Vietnamese')
     # db.session.add(vietnamese)
@@ -65,7 +57,6 @@ def seed_cuisines():
     # alcohol = Cuisine(name='Alcohol')
     # db.session.add(alcohol)
     
-
     db.session.commit()
 
 
