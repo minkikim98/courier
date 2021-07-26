@@ -6,13 +6,11 @@ import SimpleNavBar from '../navbar/SimpleNavBar';
 
 import "./Intro.css";
 
-// import Logo from "../../images/logo.png"
 import introBanner from '../../images/intro-image.jpeg';
 import headshot from '../../images/headshot.jpeg';
 
 const IntroPage = () => {
     return (
-            // {/* <img className="intro__hero-img" src="https://www.teahub.io/photos/full/38-388348_bicycle-wallpaper-hd.jpg" alt="Banner"></img> */}
         <>
             <SimpleNavBar />
             <div className="intro">

@@ -27,7 +27,7 @@ export const getCart = () => async (dispatch) => {
         }
     });
     const data = await response.json();
-    // if (data.errors) return data; 
+    if (data.errors) return data; 
     dispatch(setCart(data));
     return data;
 }
@@ -43,7 +43,7 @@ export const addToCart = (itemId) => async (dispatch) => {
         })
     });
     const data = await response.json();
-    // if (data.errors) return data; 
+    if (data.errors) return data; 
     dispatch(setCart(data));
     return data;
 }
@@ -56,15 +56,10 @@ export const removeFromCart = (itemId) => async (dispatch) => {
         }
     });
     const data = await response.json();
-    // if (data.errors) return data; 
+    if (data.errors) return data; 
     dispatch(setCart(data));
     return data;
 }
-
-// export const clearCart = () => (dispatch) => {
-//     dispatch(clearCart({}));
-//     return {};
-// }
 
 const initialState = {cart: {}, showCart: false};
 

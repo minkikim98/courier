@@ -21,25 +21,31 @@ export const getAllRestaurants = () => async (dispatch) => {
     dispatch(setRestaurants(data));
 }
 
-// export const getFilteredRestaurants = (cuisineId) => async (dispatch) => {
-//     const response = await fetch(`/api/restaurants/cuisines/${cuisineId}`, {
-//         headers: {
-//             "Content-Type": "application/json",
-//         }
-//     });
-//     const data = await response.json();
-//     dispatch(setRestaurants(data));
-// }
 
-// export const getTaggedRestaurants = (tagId) => async (dispatch) => {
-//     const response = await fetch(`/api/restaurants/tags/${tagId}`, {
-//         headers: {
-//             "Content-Type": "application/json",
-//         }
-//     });
-//     const data = await response.json();
-//     dispatch(setRestaurants(data));
-// }
+// Deprecated
+/* 
+export const getFilteredRestaurants = (cuisineId) => async (dispatch) => {
+    const response = await fetch(`/api/restaurants/cuisines/${cuisineId}`, {
+        headers: {
+            "Content-Type": "application/json",
+        }
+    });
+    const data = await response.json();
+    dispatch(setRestaurants(data));
+}
+ */
+
+/* 
+export const getTaggedRestaurants = (tagId) => async (dispatch) => {
+    const response = await fetch(`/api/restaurants/tags/${tagId}`, {
+        headers: {
+            "Content-Type": "application/json",
+        }
+    });
+    const data = await response.json();
+    dispatch(setRestaurants(data));
+}
+ */
 
 export const getSingleRestaurant = (restaurantId) => async (dispatch) => {
     const response = await fetch(`/api/restaurants/${restaurantId}`, {
