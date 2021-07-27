@@ -16,7 +16,6 @@ const SidebarMenuButton = () => {
             setShowSidebarMenu(false);
         };
 
-        // document.addEventListener('submit', closeEditDateTime);
         document.getElementById("close-sidebar-menu").addEventListener('click', closeSidebarMenu);
     }, [showSidebarMenu]);
 

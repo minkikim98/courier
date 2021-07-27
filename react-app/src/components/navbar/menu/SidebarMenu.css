@@ -15,7 +15,6 @@
     background-color: transparent;
     font-size: 19px;
     font-weight: bold;
-    /* color: rgb(0, 191, 155); */
     margin-left: 10px;
     
     cursor: pointer;
@@ -40,8 +39,6 @@
     color: rgb(0, 191, 155);
 
     cursor: pointer;
-    /* border: 1px solid red; */
-
 }
 
 .sidebar-menu-options {

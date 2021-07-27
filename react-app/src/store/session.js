@@ -12,7 +12,6 @@ const removeUser = () => ({
 })
 
 
-
 // thunks
 export const authenticate = () => async (dispatch) => {
     const response = await fetch('/api/auth/', {
@@ -83,8 +82,6 @@ export const signUp = (username, email, password) => async (dispatch) => {
 // reducer
 
 const initialState = { user: null };
-
-// useSelector(state => state.session.user)
 
 export default function reducer(state = initialState, action) {
     switch (action.type) {
