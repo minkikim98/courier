@@ -18,7 +18,6 @@ const EditDateTimeButton = () => {
         const closeEditDateTime = () => {
             setShowEditDateTime(false);
         };
-        // document.addEventListener('submit', closeEditDateTime);
         document.getElementById("close-date-time").addEventListener('click', closeEditDateTime);
     }, [showEditDateTime]);
 
