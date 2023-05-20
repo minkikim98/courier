@@ -58,6 +58,3 @@ Users can search for a particular restaurant by name, and can click on the resul
 
 ## That's it!
 Thanks for taking the time to check out the site! I'm very proud of what I was able to do in such a short amount of time. Keep checking back for continuous updates and new features!  
-  
-If you want to see some of my other projects, you can do so 
-[here](https://sites.google.com/view/minki-kim/home)!
